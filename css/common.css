@@ -1,5 +1,12 @@
-.nav-link.active,
+
+/* a.nav-link.active,
 .show > .nav-link {
-  color: yellow !important;
+  color: yellow;
   background-color: red !important;
+} */
+
+#navbar-example2{
+  width: 100vw;
+  justify-content: center;
+  background-color: white;
 }
