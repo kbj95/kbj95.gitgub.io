@@ -1,6 +1,6 @@
 /* 공통 */
 #wrap{
-    display: none;
+    /* display: none; */
     box-sizing: border-box;
 }
 a{
@@ -21,23 +21,65 @@ nav{
     padding-top: 10px;
     width: 100%;
     z-index: 99;
+    /* box-shadow: 0 5px 5px #efefef; */
+}
+nav a{
+    text-decoration: none;
+    color: #6d80a1;
+    font-weight: 700;
 }
 section{
     width: 100%;
     min-height: 500px;
 }
-
+#toTop {
+    display: none;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 10;
+    width: 50px;
+    height: 50px;
+    background: #6d80a1;
+    border-radius: 50%;
+}
+#toTop img{
+    margin: 7px;
+}
 /* 프로필 영역 */
 #box0{
-    background: rgb(247,247,233);
-    background: linear-gradient(49deg, rgba(247,247,233,1) 0%, rgba(229,230,235,1) 78%);
+    background: rgb(239,233,239);
+    background: linear-gradient(180deg, rgba(239,233,239,1) 49%, rgba(229,238,254,1) 99%);
+    height: 100vh;
 }
+#box0 > h1{
+    text-align: center;
+    text-underline-position : under;
+    text-decoration-thickness: 2px;
+    text-decoration-color: rgb(218, 191, 196);
+    color: #6d80a1;
+    padding-top: 300px;
+}
+.down {animation: motion 0.4s linear 0s infinite alternate; margin-top: 0;}
+        
+@keyframes motion {
+	0% {margin-top: 0px;}
+	100% {margin-top: 10px;}
+}
+#box0 > div{
+    margin: 50px;
+    text-align: center;
+}
+#box0 > div > a{
+    font-size: 50px;
+}
+/* h1#lager:hover{transform:scale(1.1,1.1);} */
 #box1 > div.row{
     width: 100%;
 }
 
 #box2{
-    background: blue;
+    background: pink;
 }
 #box3{
     background: yellowgreen;
@@ -47,7 +89,7 @@ section{
     min-height: 1000px;
 }
 .active{
-    color: red;
+    color: pink;
 }
 
 /* loading */
