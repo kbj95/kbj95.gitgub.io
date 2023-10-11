@@ -77,10 +77,11 @@
             <h1 class="display-1 fw-bold">PORTFOLIO</h1>
             <div><a href="#box1"><img class="down" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAAAXNSR0IArs4c6QAAAUVJREFUaEPt18ENgzAMBdBk0aLe2xkIM9ABymidhIpTK9GK+Mc2MnzONuT5xwdyOtmTT+ZNBB89cSbMhA82AV7pgwW64jBhScL3Ms2Seq3asXRwUHDjcniCtSLceA8TFgyaV1owrJClTQlHFBMcMTXJmZmwZFrS2tsw9XlO5btvzqk8+m6Qvgutd02Y4JQSE0bvamUfr3TloKAy7jB3GLo4oibusGhcwmLuMHdYeGWAcu4wMLTqFu5wtB3+lVh13HBhvo7l8kTbm3fYF92GXYbUDF5e4oNux6qB7dE6WFWwHVoPqw7WR+tiTcB6aH2sGbgdbYM1BeNoO6w5WI62xbqA69H2WDfwNtoH6wr+j/bDuoPXaF/sLuAPOr9a/np2+1tCP7xXn8rf0l6HR75LMDK1SD1MOFJayFmZMDK1SD1MOFJayFnfScvXPROtkjcAAAAASUVORK5CYII="/></a></div>
         </section>
+        <!-- 프로필 -->
         <section id="box1">
             <div class="row">
                 <!-- 프로필 이미지 (왼쪽) 영역 -->
-                <aside class="col-lg-3 col-md-4 pb-5 mt-n5">
+                <aside class="col-lg-3 col-md-4 mt-n5">
                     <div class="pt-5">
                         <div class="text-center pt-5">
                             <div class="d-table position-relative mx-auto mt-2 mt-lg-4 pt-5 mb-3">
@@ -92,7 +93,7 @@
                     </div> 
                 </aside>
                 <!-- 상세 정보 영역 (오른쪽) 영역 -->
-                <div class="col-md-8 offset-lg-1 pb-5 mt-n3 mb-2 mb-lg-4 pt-md-5 mt-n3 mt-md-0 ms-3 ms-md-0">
+                <div class="col-md-8 offset-lg-1 mt-n3 mb-2 mb-lg-4 pt-md-5 mt-n3 mt-md-0 ms-3 ms-md-0">
                     <div class="ps-md-3 ps-lg-0 mt-md-2 py-md-4">
                         <h1>Profile</h1>
                         <h3 class="pt-xl-1 pb-3">Info</h3>
@@ -112,15 +113,23 @@
                                 </div>
                                 <div class="col-sm-6 mb-4">
                                     <label for="tel" class="form-label fs-base">연락처</label>
-                                    <input type="tel" class="form-control form-control-lg" id="tel" value="010-3952-4302">
+                                    <input type="tel" class="form-control form-control-lg" id="tel" value="010-3952-4302" readonly>
                                 </div>
                                 <div class="col-sm-6 mb-4">
                                     <label for="tel" class="form-label fs-base">주소지</label>
-                                    <input type="tel" class="form-control form-control-lg" id="tel" value="대구광역시 동구">
+                                    <input type="tel" class="form-control form-control-lg" id="tel" value="대구광역시 동구" readonly>
+                                </div>
+                                <div class="col-sm-6 mb-4">
+                                    <label for="tel" class="form-label fs-base">주소지</label>
+                                    <input type="tel" class="form-control form-control-lg" id="tel" value="대구광역시 동구" readonly>
                                 </div>
                                 <div class="col-sm-6 mb-4">
                                     <label for="tel" class="form-label fs-base">활동</label>
-                                    <input type="tel" class="form-control form-control-lg" id="tel" value="PHP">
+                                    <input type="tel" class="form-control form-control-lg" id="tel" value="PHP" readonly>
+                                </div>
+                                <div class="col-sm-6 mb-4">
+                                    <label for="tel" class="form-label fs-base">활동</label>
+                                    <input type="tel" class="form-control form-control-lg" id="tel" value="PHP" readonly>
                                 </div>
                             </div>
                         </form>
@@ -128,9 +137,169 @@
                 </div>
             </div>
         </section>
+        <!-- 스킬 -->
         <section id="box2">
+            <div class="row">
+                <aside class="col-lg-3 col-md-4">
+                    <div class="pt-5"></div> 
+                </aside>
+                <div class="col-md-8 offset-lg-1 mt-n3 pt-md-5 mt-n3 mt-md-0 ms-3 ms-md-0">
+                    <div class="ps-md-3 ps-lg-0 mt-md-2 py-md-4">
+                        <h1>Skill</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="container text-center">
+                            <!-- <h3 class="mb-1 mb-md-5">FRONT</h3> -->
+                            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 mt-0 mt-md-5">
+                                <div class="col mt-5 mt-md-0">
+                                    <div class="frontIcon">
+                                        <img src="./img/html.png" alt="" class="d-none d-md-block">
+                                    </div>
+                                    <div class="frontText">
+                                        <span class="d-inline-block d-md-none position-relative pl">HTML</span>
+                                        <progress value="95" min="0" max="100"></progress>
+                                        <span class="position-relative pl">95%</span>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="frontIcon">
+                                        <img src="./img/css.png" alt="" class="d-none d-md-block">
+                                    </div>
+                                    <div class="frontText mb-3">
+                                        <span class="d-inline-block d-md-none position-relative pl">CSS</span>
+                                        <progress value="90" min="0" max="100"></progress>
+                                        <span class="position-relative pl">90%</span>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="frontIcon">
+                                        <img src="./img/js.png" alt="" class="d-none d-md-block">
+                                    </div>
+                                    <div class="frontText mt-1 mt-md-0">
+                                        <span class="d-inline-block d-md-none position-relative pl">JS</span>
+                                        <progress value="75" min="0" max="100"></progress>
+                                        <span class="position-relative pl">75%</span>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="frontIcon">
+                                        <img src="./img/jquery.png" alt="" class="d-none d-md-block">
+                                    </div>
+                                    <div class="frontText mb-3">
+                                        <span class="d-inline-block d-md-none position-relative pl">Jquery</span>
+                                        <progress value="75" min="0" max="100"></progress>
+                                        <span class="position-relative pl">75%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="container text-center">
+                            <!-- <h3 class="mb-1 mb-md-5">BACK</h3> -->
+                            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 mt-0 mt-md-5">
+                                <div class="col mt-5 mt-md-0">
+                                    <div class="frontIcon">
+                                        <img src="./img/php.png" alt="" class="d-none d-md-block">
+                                    </div>
+                                    <div class="frontText">
+                                        <span class="d-inline-block d-md-none position-relative pl">PHP</span>
+                                        <progress value="95" min="0" max="100"></progress>
+                                        <span class="position-relative pl">95%</span>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="frontIcon">
+                                        <img src="./img/db.png" alt="" class="d-none d-md-block">
+                                    </div>
+                                    <div class="frontText mb-3">
+                                        <span class="d-inline-block d-md-none position-relative pl">MariaDB</span>
+                                        <progress value="90" min="0" max="100"></progress>
+                                        <span class="position-relative pl">90%</span>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="frontIcon">
+                                        <img src="./img/laravel.png" alt="" class="d-none d-md-block">
+                                    </div>
+                                    <div class="frontText mt-1 mt-md-0">
+                                        <span class="d-inline-block d-md-none position-relative pl">laravel</span>
+                                        <progress value="75" min="0" max="100"></progress>
+                                        <span class="position-relative pl">75%</span>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="frontIcon">
+                                        <img src="./img/vue.png" alt="" class="d-none d-md-block">
+                                    </div>
+                                    <div class="frontText mb-3">
+                                        <span class="d-inline-block d-md-none position-relative pl">Vue</span>
+                                        <progress value="75" min="0" max="100"></progress>
+                                        <span class="position-relative pl">75%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="container text-center">
+                            <!-- <h3 class="mb-1 mb-md-5">tool</h3> -->
+                            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 mt-0 mt-md-5">
+                                <div class="col mt-5 mt-md-0">
+                                    <div class="frontIcon">
+                                        <img src="./img/bootstrap.png" alt="" class="d-none d-md-block">
+                                    </div>
+                                    <div class="frontText">
+                                        <span class="d-inline-block d-md-none position-relative pl">bootstrap</span>
+                                        <progress value="95" min="0" max="100"></progress>
+                                        <span class="position-relative pl">95%</span>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="frontIcon">
+                                        <img src="./img/ps.png" alt="" class="d-none d-md-block">
+                                    </div>
+                                    <div class="frontText mb-3">
+                                        <span class="d-inline-block d-md-none position-relative pl">PhotoShop</span>
+                                        <progress value="90" min="0" max="100"></progress>
+                                        <span class="position-relative pl">90%</span>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="frontIcon">
+                                        <img src="./img/ai.png" alt="" class="d-none d-md-block">
+                                    </div>
+                                    <div class="frontText mt-1 mt-md-0">
+                                        <span class="d-inline-block d-md-none position-relative pl">Illustrator</span>
+                                        <progress value="75" min="0" max="100"></progress>
+                                        <span class="position-relative pl">75%</span>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="frontIcon">
+                                        <img src="./img/pr.png" alt="" class="d-none d-md-block">
+                                    </div>
+                                    <div class="frontText mb-3">
+                                        <span class="d-inline-block d-md-none position-relative pl">Premiere</span>
+                                        <progress value="75" min="0" max="100"></progress>
+                                        <span class="position-relative pl">75%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
         </section>
-        <section id="box3"></section>
+        <section id="box3">
+        </section>
         <section id="box4"></section>
     </div>
     <div id="toTop">
@@ -139,5 +308,20 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/script copy.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            pagination: {
+                el: ".swiper-pagination",
+                dynamicBullets: true,
+            },
+            navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
 </body>
 </html>
