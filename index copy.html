@@ -7,9 +7,20 @@
     <title>PORTFOLIO</title>
     <link rel="icon" href="img/favicon.ico">
     <link rel="stylesheet" href="css/practice.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/theme.min.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script>
+        let mode = window.localStorage.getItem('mode'),
+            root = document.getElementsByTagName('html')[0];
+        if (mode !== null && mode === 'dark') {
+          root.classList.add('dark-mode');
+        } else {
+          root.classList.remove('dark-mode');
+        }
+      </script>
+
 </head>
 <body>
     <!-- <div id="load">
@@ -72,9 +83,14 @@
                         <a href="#box4">Mini</a>
                     </li>
                     <li class="top">0</li>
+                    <div class="form-check form-switch mode-switch pe-lg-1 ms-auto me-4" data-bs-toggle="mode">
+                        <input type="checkbox" class="form-check-input" id="theme-mode">
+                        <label class="form-check-label d-none d-md-block" for="theme-mode">밝게</label>
+                        <label class="form-check-label d-none d-md-block" for="theme-mode">어둡게</label>
+                    </div>
                 </ul>
             </nav>
-            <h1 class="display-1 fw-bold">PORTFOLIO</h1>
+            <h1 class="display-1 fw-bold textS">PORTFOLIO</h1>
             <div><a href="#box1"><img class="down" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAAAXNSR0IArs4c6QAAAUVJREFUaEPt18ENgzAMBdBk0aLe2xkIM9ABymidhIpTK9GK+Mc2MnzONuT5xwdyOtmTT+ZNBB89cSbMhA82AV7pgwW64jBhScL3Ms2Seq3asXRwUHDjcniCtSLceA8TFgyaV1owrJClTQlHFBMcMTXJmZmwZFrS2tsw9XlO5btvzqk8+m6Qvgutd02Y4JQSE0bvamUfr3TloKAy7jB3GLo4oibusGhcwmLuMHdYeGWAcu4wMLTqFu5wtB3+lVh13HBhvo7l8kTbm3fYF92GXYbUDF5e4oNux6qB7dE6WFWwHVoPqw7WR+tiTcB6aH2sGbgdbYM1BeNoO6w5WI62xbqA69H2WDfwNtoH6wr+j/bDuoPXaF/sLuAPOr9a/np2+1tCP7xXn8rf0l6HR75LMDK1SD1MOFJayFmZMDK1SD1MOFJayFnfScvXPROtkjcAAAAASUVORK5CYII="/></a></div>
         </section>
         <!-- 프로필 -->
@@ -85,10 +101,10 @@
                     <div class="pt-5">
                         <div class="text-center pt-5">
                             <div class="d-table position-relative mx-auto mt-2 mt-lg-4 pt-5 mb-3">
-                            <img src="./img/test.jpg" class="d-block rounded-circle" width="120">
+                            <img src="./img/profile_img01.jpg" class="d-block rounded-circle" width="120">
                             </div>
                             <h2 class="h5 mb-1">포트폴리오</h2>
-                            <p class="mb-3 pb-3">Git Adress</p> 
+                            <p class="mb-3 pb-3"><a href="https://github.com/kbj95" target="_blank">Git 바로가기</a></p> 
                         </div>
                     </div> 
                 </aside>
@@ -120,8 +136,8 @@
                                     <input type="tel" class="form-control form-control-lg" id="tel" value="대구광역시 동구" readonly>
                                 </div>
                                 <div class="col-sm-6 mb-4">
-                                    <label for="tel" class="form-label fs-base">주소지</label>
-                                    <input type="tel" class="form-control form-control-lg" id="tel" value="대구광역시 동구" readonly>
+                                    <label for="tel" class="form-label fs-base">자격증</label>
+                                    <input type="tel" class="form-control form-control-lg" id="tel" value="GTQ 웹디자인기능사(필기)&컴퓨터그래픽스(필기)" readonly>
                                 </div>
                                 <div class="col-sm-6 mb-4">
                                     <label for="tel" class="form-label fs-base">활동</label>
@@ -298,17 +314,201 @@
                 <div class="swiper-pagination"></div>
             </div>
         </section>
-        <section id="box3">
+        <!-- 프로젝트 -->
+        <section class="container pt-5 pb-2 pb-md-3 py-lg-5" id="box3">
+            <div class="row">
+                <aside class="col-lg-3 col-md-4">
+                    <div class="pt-5"></div> 
+                </aside>
+                <div class="col-md-8 offset-lg-1 mt-n3 pt-md-5 mt-n3 mt-md-0 ms-3 ms-md-0">
+                    <div class="ps-md-3 ps-lg-0 mt-md-2 py-md-4">
+                        <h1>Project</h1>
+                    </div>
+                </div>
+            </div>
+            <!-- 첫번째 줄 -->
+            <div class="row align-items-center my-3 pb-md-3 py-lg-5">
+              <!-- 왼쪽영역 -->
+              <div class="col-md-6 col-xl-5 offset-lg-1 offset-xl-2 order-md-2 mb-2 mb-md-0 pb-4 pb-md-0">
+                <div class="position-relative mx-auto mx-md-0" style="max-width:469px;">
+                  <img src="./img/frame.png" class="rellax d-block position-absolute" data-rellax-percentage="0.5" data-rellax-speed="-0.5" data-disable-parallax-down="md">
+                  <div class="rellax position-absolute top-0 left-0 w-100 h-100" data-rellax-percentage="0.5" data-rellax-speed="1" data-disable-parallax-down="md">
+                    <img src="img/back.png">
+                  </div>
+                </div>
+              </div>
+      
+              <!-- 오른쪽 영역 -->
+              <div class="col-md-6 col-lg-5 col-xl-4 offset-xl-1 order-md-1 pd-md-4">
+                <h2 class="pb-3">Make your money transfer simple and clear</h2>
+                <ul class="list-unstyled pb-3 mb-3">
+                  <li class="d-flex align-items-center mb-2"><i class="bx bx-check-circle fs-xl text-primary me-2"></i>
+                    Banking transactions are free for you</li>
+                  <li class="d-flex align-items-center mb-2"><i class="bx bx-check-circle fs-xl text-primary me-2"></i>
+                    No monthly cash commission</li>
+                  <li class="d-flex align-items-center mb-2"><i class="bx bx-check-circle fs-xl text-primary me-2"></i>
+                    Manage payments and transactions online</li>
+                </ul>
+                <a href="#" class="btn btn-primary">
+                  자세히 알아보기 <i class="bx bx-right-arrow-alt fs-xl ms-2 me-n1"></i>
+                </a>
+              </div>
+      
+            </div>
+      
+            <!-- 두번째 줄 -->
+            <div class="row align-items-center mb-3 mt-md-0 pb-md-3 pt-lg-0 pb-lg-5">
+              <!-- 왼쪽영역 -->
+              <div class="col-md-6 col-lg-5 offset-lg-1 mb-2 mb-md-0 pb-4 pb-md-0">
+                <div class="position-relative mx-auto mx-md-0" style="max-width:469px;">
+                  <img src="assets/img/landing/app-showcase/features/screen03.png" class="rellax d-block" data-rellax-percentage="0.5" data-rellax-speed="-0.5" data-disable-parallax-down="md">
+                  <div class="rellax position-absolute top-0 left-0 w-100 h-100" data-rellax-percentage="0.5" data-rellax-speed="1" data-disable-parallax-down="md">
+                    <img src="assets/img/landing/app-showcase/features/screen04.png">
+                  </div>
+                </div>
+              </div>
+      
+              <!-- 오른쪽 영역 -->
+              <div class="col-md-6 col-lg-5 col-xl-4 offset-xl-1 pd-md-4">
+                <h2 class="pb-3">Receive payment from international bank details</h2>
+                <div class="row row-cols-1 row-cols-sm-2 text-start pb-3">
+                  <div class="col pb-4">
+                    <div class="d-table bg-secondary rounded-3 flex-shrink-0 p-3 mb-3">
+                      <img src="assets/img/landing/app-showcase/features/payments.svg">
+                    </div>
+                    <p class="mb-0">Manage your payments online. Mollis congue egestas egestas fermentum fames.</p>
+                  </div>
+                  <div class="col pb-4">
+                    <div class="d-table bg-secondary rounded-3 flex-shrink-0 p-3 mb-3">
+                      <img src="assets/img/landing/app-showcase/features/cashback.svg">
+                    </div>
+                    <p class="mb-0">A elementur and imperdiet enim, pretium etiam facilisi aenean quam mauris.</p>
+                  </div>
+      
+                <a href="#" class="btn btn-primary">
+                  자세히 알아보기 <i class="bx bx-right-arrow-alt fs-xl ms-2 me-n1"></i>
+                </a>
+              </div>
+      
+            </div>
+          </section>  
+        <section id="box4">
+            <section class="position-relative bg-secondary py-5">
+                <div class="container mt-3 pt-md-2 pt-lg-4 pb-2 pb-md-4 pb-lg-5">
+                  <h2 class="h1 text-center pb-2 pb-md-0 mb-4 mb-md-5">How Does It Work?</h2>
+                  <div class="position-relative mx-5">
+        
+                    <!-- Slider prev/next buttons -->
+                    <button type="button" id="prev-screen" class="btn btn-prev btn-icon position-absolute top-50 start-0 ms-n5 translate-middle-y">
+                      <i class="bx bx-chevron-left"></i>
+                    </button>
+                    <button type="button" id="next-screen" class="btn btn-next btn-icon position-absolute top-50 end-0 me-n5 translate-middle-y">
+                      <i class="bx bx-chevron-right"></i>
+                    </button>
+        
+                    <!-- Phone frame -->
+                    <div class="position-absolute top-0 start-50 translate-middle-x h-100 w-100 w-md-33 zindex-5">
+                      <div class="d-flex bg-repeat-0 bg-size-cover w-100 h-100 mx-auto" style="max-width: 328px; background-image: url(img/phone-frame.png);"></div>
+                    </div>
+        
+                    <!-- Phone screen -->
+                    <div class="position-absolute top-0 start-50 translate-middle-x h-100 w-100 w-md-33">
+                      <div class="d-flex bg-repeat-0 bg-size-cover w-100 h-100 mx-auto" style="max-width: 328px; background-image: url(img/phone-frame.png);"></div>
+                    </div>
+        
+                    <!-- Swiper slider -->
+                    <div class="swiper mobile-app-slider" data-swiper-options='{
+                      "slidesPerView": 1,
+                      "centeredSlides": true,
+                      "loop": true,
+                      "tabs": true,
+                      "pagination": {
+                        "el": "#swiper-progress",
+                        "type": "progressbar"
+                      },
+                      "navigation": {
+                        "prevEl": "#prev-screen",
+                        "nextEl": "#next-screen"
+                      },
+                      "breakpoints": {
+                        "768": { "slidesPerView": 3 }
+                      }
+                    }'>
+                      <div class="swiper-wrapper">
+        
+                        <!-- Item -->
+                        <div class="swiper-slide" data-swiper-tab="#text-1">
+                          <img src="img/phone-frame.png" class="d-block mx-auto" width="328" alt="Screen">
+                        </div>
+        
+                        <!-- Item -->
+                        <div class="swiper-slide" data-swiper-tab="#text-2">
+                          <img src="img/back.png" class="d-block mx-auto" width="328" alt="Screen">
+                        </div>
+        
+                        <!-- Item -->
+                        <div class="swiper-slide" data-swiper-tab="#text-3">
+                          <img src="img/phone-frame.png" class="d-block mx-auto" width="328" alt="Screen">
+                        </div>
+        
+                        <!-- Item -->
+                        <div class="swiper-slide" data-swiper-tab="#text-4">
+                          <img src="img/phone-frame.png" class="d-block mx-auto" width="328" alt="Screen">
+                        </div>
+        
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row justify-content-center pt-4 mt-md-3">
+                    <div class="swiper-tabs col-xl-6 col-lg-7 col-md-8 text-center">
+                      <div id="text-1" class="swiper-tab active">
+                        <h3 class="h4 pb-1 mb-2">Step 1. Title</h3>
+                        <p class="mb-0 ">Consequat ut cras nisl, enim purus in facilisi. Ipsum amet, lectus malesuada risus sollicitudin accumsan. Id sem elit vel vel lectus risus senectus.</p>
+                      </div>
+                      <div id="text-2" class="swiper-tab">
+                        <h3 class="h4 pb-1 mb-2">Step 2. Title</h3>
+                        <p class="mb-0 ">Consequat ut cras nisl, enim purus in facilisi. Ipsum amet, lectus malesuada risus sollicitudin accumsan. Id sem elit vel vel lectus risus senectus.</p>
+                      </div>
+                      <div id="text-3" class="swiper-tab">
+                        <h3 class="h4 pb-1 mb-2">Step 3. Title</h3>
+                        <p class="mb-0 ">Consequat ut cras nisl, enim purus in facilisi. Ipsum amet, lectus malesuada risus sollicitudin accumsan. Id sem elit vel vel lectus risus senectus.</p>
+                      </div>
+                      <div id="text-4" class="swiper-tab">
+                        <h3 class="h4 pb-1 mb-2">Step 4. Title</h3>
+                        <p class="mb-0 ">Consequat ut cras nisl, enim purus in facilisi. Ipsum amet, lectus malesuada risus sollicitudin accumsan. Id sem elit vel vel lectus risus senectus.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="swiper-progress" class="swiper-pagination bottom-0" style="top:auto"></div>
+                </div>
+        
+              </section>
         </section>
-        <section id="box4"></section>
     </div>
     <div id="toTop">
         <a href="#top"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAARpJREFUWEftl2EOgjAMhfdugidRTmI4iXgTPYl4ErlJTcmWELPRdUOcZPwtTb+89r0ATGEPCuMxFUjaSFAhIrpIzTl1AFdf/xIQ5QyUegF4Z/8VUFkrkyT/Vn2ftieihhUDMOYqt4pCRPQwxjQADj8HsjAnCzIAaHOgshT6gHEcNwBdKlQykE3yPjC4DyWxBJoERES8Ir6bpScJSg0UCcOg7LgOwCCpMq+rgKy9X4oBaqhooAQYx81QbWxGaYD4Zpy9FSJNr46xGRUFFLC3Fioqo0SglWCiM2oRyN7N2SMFr05aH7vL57D70j2JCvn2IoSia9kmh3haBZLsUxWqCs0U2I3tORSPwmqf2k+P6UdBupet6xVIUrw4hd4oEYEl2izEWgAAAABJRU5ErkJggg=="/></a>
     </div>
+
+
+
+
+
+
+    <!-- js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="js/smooth-scroll.polyfills.min.js"></script>
+    <script src="js/rellax.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/theme.min.js"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/script copy.js"></script>
+    <!-- <script src="js/smooth-scroll.polyfills.min.js"></script>
+    <script src="js/rellax.min.js"></script>
+    <script src="js/theme.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/script copy.js"></script> -->
 
     <!-- Initialize Swiper -->
     <script>
