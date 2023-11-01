@@ -23,6 +23,7 @@ $(document).ready(function() {
     function fixedNav(){
         if($(window).scrollTop() > headerHeight){
             $('nav').addClass('position-fixed');
+            $('nav').css("magin","0");
         }else{
             $('nav').removeClass('position-fixed');
         }
