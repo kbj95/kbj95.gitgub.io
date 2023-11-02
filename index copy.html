@@ -103,49 +103,56 @@
                             <div class="d-table position-relative mx-auto mt-2 mt-lg-4 pt-5 mb-3">
                             <img src="./img/profile_img01.jpg" class="d-block rounded-circle" width="120">
                             </div>
-                            <h2 class="h5 mb-1">포트폴리오</h2>
-                            <p class="mb-3 pb-3"><a href="https://github.com/kbj95" target="_blank">Git 바로가기</a></p> 
+                            <!-- <h2 class="h5 mb-1">포트폴리오</h2> -->
+                            <p class="mb-3 pb-3">
+                                <a href="https://github.com/kbj95" target="_blank">
+                                    <img src="./img/github.png" class="icon">
+                                </a>
+                            </p> 
                         </div>
                     </div> 
                 </aside>
                 <!-- 상세 정보 영역 (오른쪽) 영역 -->
                 <div class="col-md-8 offset-lg-1 mt-n3 mb-2 mb-lg-4 pt-md-5 mt-n3 mt-md-0 ms-3 ms-md-0">
                     <div class="ps-md-3 ps-lg-0 mt-md-2 py-md-4">
-                        <h1>Profile</h1>
+                        <h1 class="fc_blue fw-bold">Profile</h1>
                         <h3 class="pt-xl-1 pb-3">Info</h3>
-                        <form class="needs-validation pb-3 pb-lg-4" novalidate>
+                        <!-- <form class="needs-validation pb-3 pb-lg-4" novalidate> -->
+                        <form class="pb-3 pb-lg-4" novalidate>
                             <div class="row pb-2">
                                 <div class="col-md-6 mb-4">
-                                    <label for="fn" class="form-label fs-base">이름</label>
-                                    <input type="text" id="fn" class="form-control form-control-lg" value="권봉정" required readonly>
+                                    <!-- <label for="fn" class="form-label fs-base">이름</label> -->
+                                    <!-- <input type="text" id="fn" class="form-control form-control-lg" value="권봉정" required readonly> -->
+                                    <div class="mb-2">이름</div>
+                                    <div class="info fw-semibold">권봉정</div>
                                 </div>
                                 <div class="col-md-6 mb-4">
-                                    <label for="sn" class="form-label fs-base">생년월일</label>
-                                    <input type="text" id="sn" class="form-control form-control-lg" value="1995.07.04" required readonly>
+                                    <div class="mb-2">생년월일</div>
+                                    <div class="info fw-semibold">1995.07.04</div>
                                 </div>
                                 <div class="col-md-6 mb-4">
-                                    <label for="email" class="form-label fs-base">이메일</label>
-                                    <input type="email" id="email" class="form-control form-control-lg" value="gwonbongjeong@gmail.com" required readonly>
+                                    <div class="mb-2">이메일</div>
+                                    <div class="info fw-semibold">gwonbongjeong@gmail.com</div>
                                 </div>
                                 <div class="col-md-6 mb-4">
-                                    <label for="tel" class="form-label fs-base">연락처</label>
-                                    <input type="tel" class="form-control form-control-lg" id="tel" value="010-3952-4302" readonly>
+                                    <div class="mb-2">연락처</div>
+                                    <div class="info fw-semibold">010-3952-4302</div>
                                 </div>
                                 <div class="col-md-6 mb-4">
-                                    <label for="tel" class="form-label fs-base">주소지</label>
-                                    <input type="tel" class="form-control form-control-lg" id="tel" value="대구광역시 동구" readonly>
+                                    <div class="mb-2">주소지</div>
+                                    <div class="info fw-semibold">대구광역시 동구</div>
                                 </div>
                                 <div class="col-md-6 mb-4">
-                                    <label for="tel" class="form-label fs-base">자격증</label>
-                                    <input type="tel" class="form-control form-control-lg" id="tel" value="GTQ 웹디자인기능사(필기)&컴퓨터그래픽스(필기)" readonly>
+                                    <div class="mb-2">자격증</div>
+                                    <div class="info fw-semibold fs-6">GTQ 웹디자인기능사(필기)&컴퓨터그래픽스(필기)</div>
                                 </div>
                                 <div class="col-md-6 mb-4">
-                                    <label for="tel" class="form-label fs-base">활동</label>
-                                    <input type="tel" class="form-control form-control-lg" id="tel" value="PHP풀스택(프론트앤드+백앤드)개발자 양성과정" readonly>
+                                    <div class="mb-2">활동</div>
+                                    <div class="info fw-semibold fs-6">PHP풀스택(프론트앤드+백앤드)개발자 양성과정</div>
                                 </div>
                                 <div class="col-md-6 mb-4">
-                                    <label for="tel" class="form-label fs-base">활동</label>
-                                    <input type="tel" class="form-control form-control-lg" id="tel" value="웹 앱 기반 PWA 프론트앤드 (웹 퍼블리셔) 개발자 과정" readonly>
+                                    <div class="mb-2">활동</div>
+                                    <div class="info fw-semibold fs-6">웹 앱 기반 PWA 프론트앤드 (웹 퍼블리셔) 개발자 과정</div>
                                 </div>
                             </div>
                         </form>
@@ -410,7 +417,7 @@
                             <div class="carousel-inner">
                               <div class="carousel-item active" data-bs-interval="10000">
                                 <!-- <img src="./img/back.png" class="d-block" alt="..."> -->
-                                <video controls="" autoplay="" loop="">
+                                <video controls="" autoplay="autoplay" loop="">
                                     <source src="./video/구글로그인.mp4" type="video/mp4">
                                 </video>
                                 <div class="carousel-caption d-none d-md-block">
