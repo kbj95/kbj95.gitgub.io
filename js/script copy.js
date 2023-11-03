@@ -96,6 +96,10 @@ $(document).ready(function() {
             $('.frontText').css("opacity","1");
             $('.frontIcon').css("display","none");
         }
+
+        // if($(window).width() <= 1430){
+        //     location.href($('#box3'));
+        // }
     });
 
     if($(window).width() > 749) { 		
@@ -113,7 +117,7 @@ $(document).ready(function() {
         });
     }
     else if($(window).width() <= 749){
-        $('.frontText').css("opacity","1");
+        // $('.frontText').css("opacity","1");
         $('.frontIcon').css("display","none");
     }
 });

@@ -5,19 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <!-- <link rel="stylesheet" href="css/practice.css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
-    <link rel="stylesheet" href="css/theme.min.css">
+    <!-- <link rel="stylesheet" href="css/theme.min.css"> -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="icon" href="img/favicon.ico">
 
   <script>
-    // let mode = window.localStorage.getItem('mode'),
-    //     root = document.getElementsByTagName('html')[0];
-    // if (mode !== null && mode === 'dark') {
-    //   root.classList.add('dark-mode');
-    // } else {
-    //   root.classList.remove('dark-mode');
-    // }
+    let mode = window.localStorage.getItem('mode'),
+        root = document.getElementsByTagName('html')[0];
+    if (mode !== null && mode === 'dark') {
+      root.classList.add('dark-mode');
+    } else {
+      root.classList.remove('dark-mode');
+    }
   </script>
 </head>
 <body>
@@ -45,8 +46,8 @@
       </div>
       <div class="form-check form-switch mode-switch pe-lg-1 ms-auto me-4" data-bs-toggle="mode">
         <input type="checkbox" class="form-check-input" id="theme-mode">
-        <label class="form-check-label d-none d-sm-block" for="theme-mode">밝게</label>
-        <label class="form-check-label d-none d-sm-block" for="theme-mode">어둡게</label>
+        <!-- <label class="form-check-label d-none d-sm-block" for="theme-mode">밝게</label>
+        <label class="form-check-label d-none d-sm-block" for="theme-mode">어둡게</label> -->
       </div>
       <button type="button" class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -54,47 +55,20 @@
     </div>
   </header>
 
-    <section class="position-relative bg-secondary py-5">
+    <div class="position-relative bg-secondary py-5">
         <div class="container mt-3 pt-md-2 pt-lg-4 pb-2 pb-md-4 pb-lg-5">
           <h2 class="h1 text-center pb-2 pb-md-0 mb-4 mb-md-5">How Does It Work?</h2>
           <div class="position-relative mx-5">
-
-            <!-- Slider prev/next buttons -->
-            <button type="button" id="prev-screen" class="btn btn-prev btn-icon position-absolute top-50 start-0 ms-n5 translate-middle-y">
-              <i class="bx bx-chevron-left"></i>
-            </button>
-            <button type="button" id="next-screen" class="btn btn-next btn-icon position-absolute top-50 end-0 me-n5 translate-middle-y">
-              <i class="bx bx-chevron-right"></i>
-            </button>
-
             <!-- Phone frame -->
             <div class="position-absolute top-0 start-50 translate-middle-x h-100 w-100 w-md-33 zindex-5">
-              <div class="d-flex bg-repeat-0 bg-size-cover w-100 h-100 mx-auto" style="max-width: 328px; background-image: url(img/phone-frame.png);"></div>
+              <div class="d-flex bg-repeat-0 bg-size-cover w-100 h-100 mx-auto" style="max-width: 328px; background-image: url(img/phone-frame.png); background-size: 328px;"></div>
             </div>
 
             <!-- Phone screen -->
-            <div class="position-absolute top-0 start-50 translate-middle-x h-100 w-100 w-md-33">
-              <div class="d-flex bg-repeat-0 bg-size-cover w-100 h-100 mx-auto" style="max-width: 328px; background-image: url(img/phone-frame.png);"></div>
+            <div class="position-absolute top-0 start-50 translate-middle-x w-md-33">
+              <div class="d-flex bg-repeat-0 bg-size-cover mx-auto" style="max-width: 328px; background-image: url(img/phone-screen.png);"></div>
             </div>
-
-            <!-- Swiper slider -->
-            <div class="swiper mobile-app-slider" data-swiper-options='{
-              "slidesPerView": 1,
-              "centeredSlides": true,
-              "loop": true,
-              "tabs": true,
-              "pagination": {
-                "el": "#swiper-progress",
-                "type": "progressbar"
-              },
-              "navigation": {
-                "prevEl": "#prev-screen",
-                "nextEl": "#next-screen"
-              },
-              "breakpoints": {
-                "768": { "slidesPerView": 3 }
-              }
-            }'>
+            <div class="swiper mobileSwiper">
               <div class="swiper-wrapper">
 
                 <!-- Item -->
@@ -104,7 +78,7 @@
 
                 <!-- Item -->
                 <div class="swiper-slide" data-swiper-tab="#text-2">
-                  <img src="img/back.png" class="d-block mx-auto" width="328" alt="Screen">
+                  <img src="img/phoneTest.png" class="d-block mx-auto" width="328" alt="Screen">
                 </div>
 
                 <!-- Item -->
@@ -120,30 +94,10 @@
               </div>
             </div>
           </div>
-          <div class="row justify-content-center pt-4 mt-md-3">
-            <div class="swiper-tabs col-xl-6 col-lg-7 col-md-8 text-center">
-              <div id="text-1" class="swiper-tab active">
-                <h3 class="h4 pb-1 mb-2">Step 1. Title</h3>
-                <p class="mb-0 ">Consequat ut cras nisl, enim purus in facilisi. Ipsum amet, lectus malesuada risus sollicitudin accumsan. Id sem elit vel vel lectus risus senectus.</p>
-              </div>
-              <div id="text-2" class="swiper-tab">
-                <h3 class="h4 pb-1 mb-2">Step 2. Title</h3>
-                <p class="mb-0 ">Consequat ut cras nisl, enim purus in facilisi. Ipsum amet, lectus malesuada risus sollicitudin accumsan. Id sem elit vel vel lectus risus senectus.</p>
-              </div>
-              <div id="text-3" class="swiper-tab">
-                <h3 class="h4 pb-1 mb-2">Step 3. Title</h3>
-                <p class="mb-0 ">Consequat ut cras nisl, enim purus in facilisi. Ipsum amet, lectus malesuada risus sollicitudin accumsan. Id sem elit vel vel lectus risus senectus.</p>
-              </div>
-              <div id="text-4" class="swiper-tab">
-                <h3 class="h4 pb-1 mb-2">Step 4. Title</h3>
-                <p class="mb-0 ">Consequat ut cras nisl, enim purus in facilisi. Ipsum amet, lectus malesuada risus sollicitudin accumsan. Id sem elit vel vel lectus risus senectus.</p>
-              </div>
-            </div>
-          </div>
           <div id="swiper-progress" class="swiper-pagination bottom-0" style="top:auto"></div>
         </div>
 
-      </section>
+    </div>
 
 
 
@@ -153,5 +107,24 @@
       <script src="js/swiper-bundle.min.js"></script>
       <script src="js/theme.min.js"></script>
       <script src="js/jquery.min.js"></script>
+      <script src="js/script copy.js"></script>
+
+      <script>
+                var swiper = new Swiper(".mobileSwiper", {
+            // slidesPerView: $(window).width() <= 1430 ? '1' : '3',
+            slidesPerView: '1',
+            spaceBetween: 30,
+            scrollbar: {
+                el: ".swiper-scrollbar",
+                hide: true,
+                // clickable: true,
+            },
+            autoHeight : true,
+            centeredSlides : true, // true시에 슬라이드가 가운데로 배치
+            "breakpoints": {
+                "768": { "slidesPerView": 3 }
+            },
+        });
+      </script>
 </body>
 </html>
