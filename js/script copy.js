@@ -55,18 +55,18 @@ $(document).ready(function() {
         });
 
     // 시작
-    // function myFunction() {
-    //     myVar = setTimeout(showPage, 3000);
-    //     }
+    function myFunction() {
+        myVar = setTimeout(showPage, 3000);
+        }
         
-    // function showPage() {
-    //     $('.loadBox').css('display','none');
-    //     $('#wrap').fadeIn();
-    //     $('#load').fadeOut();
-    //     scrollSpy();
-    // }
+    function showPage() {
+        $('.loadBox').css('display','none');
+        $('#wrap').fadeIn();
+        $('#load').fadeOut();
+        scrollSpy();
+    }
 
-    // myFunction();
+    myFunction();
 
     // 끝
     

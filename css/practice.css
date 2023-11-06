@@ -7,7 +7,7 @@ h1{
     overflow: hidden;
 }
 #wrap{
-    /* display: none; */
+    display: none;
     box-sizing: border-box;
 }
 a{
@@ -323,7 +323,8 @@ span.pl{
 #load{
     width: 100vw;
     height: 100vh;
-    /* background: black; */
+    background: rgb(239,233,239);
+    background: linear-gradient(180deg, rgba(239,233,239,1) 49%, rgba(229,238,254,1) 99%);
 }
 .loadBox{
     width: 400px;
@@ -346,7 +347,7 @@ span.pl{
     left:0;
     height: 40px;
     width:0;
-    background:pink;
+    background: #6d80a1;
     animation: progress 3s ease forwards;
 }
 @keyframes progress{
