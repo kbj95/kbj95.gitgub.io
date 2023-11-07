@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="icon" href="img/favicon.ico">
+  <link rel="stylesheet" href="css/project.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+</head>
+<body>
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide" data-slide-type="img">Slide 1</div>
+      <div class="swiper-slide" data-slide-type="img">Slide 2</div>
+      <div class="swiper-slide" data-slide-type="img">Slide 3</div>
+      <div class="swiper-slide" data-slide-type="vdo">
+        <video
+          id="my-player"
+          class="video-js"
+          controls
+          preload="auto"
+          data-setup='{}' autoplay="autoplay">
+          <source src="./video/findPw.mp4" type="video/mp4"></source>
+          <p class="vjs-no-js">
+            To view this video please enable JavaScript, and consider upgrading to a
+            web browser that
+          </p>
+        </video>
+      </div>
+      <div class="swiper-slide" data-slide-type="img">Slide 5</div>
+      <div class="swiper-slide" data-slide-type="img">Slide 6</div>
+    </div>
+    <!-- Add Arrows -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/projcet.js"></script>
+</body>
+</html>
+

@@ -4,7 +4,8 @@ $(document).ready(function() {
     function scrollSpy() {
         var sections = $('section'); // 모든 섹션 요소 가져오기
         sections.each(function() {
-            var top = $(this).offset().top; // 각 섹션의 상단 위치 계산
+            var navH = $('nav').height(); // 네비 높이
+            var top = $(this).offset().top - navH; // 각 섹션의 상단 위치 계산
             var bottom = top + $(this).outerHeight(); // 각 섹션의 하단 위치 계산
 
             if ($(window).scrollTop() >= top && $(window).scrollTop() <= bottom) {
@@ -23,11 +24,17 @@ $(document).ready(function() {
     function fixedNav(){
         if($(window).scrollTop() > headerHeight){
             $('nav').addClass('position-fixed');
-            $('nav').css("magin","0");
+            $('nav').css('background','#ffffff');
+            $('nav').css('box-shadow','0 5px 5px #efefef');
+            $('#toTop').css('display','block');
         }else{
             $('nav').removeClass('position-fixed');
+            $('nav').css('background','none');
+            $('nav').css('box-shadow','none');
+            $('#toTop').css('display','none');
         }
     }
+
 
     $(window).scroll(function(){
         fixedNav();
@@ -48,18 +55,18 @@ $(document).ready(function() {
         });
 
     // 시작
-    function myFunction() {
-        myVar = setTimeout(showPage, 3000);
-        }
+    // function myFunction() {
+    //     myVar = setTimeout(showPage, 3000);
+    //     }
         
-    function showPage() {
-        $('.loadBox').css('display','none');
-        $('#wrap').fadeIn();
-        $('#load').fadeOut();
-        scrollSpy();
-    }
+    // function showPage() {
+    //     $('.loadBox').css('display','none');
+    //     $('#wrap').fadeIn();
+    //     $('#load').fadeOut();
+    //     scrollSpy();
+    // }
 
-    myFunction();
+    // myFunction();
 
     // 끝
     
@@ -67,4 +74,49 @@ $(document).ready(function() {
         var sc_top = $(this).scrollTop();
         $(".top").text(sc_top);
     });
+
+    $(window).resize(function() {
+        // console.log($(window).width());
+
+        if($(window).width() > 749) { 		
+            $('.frontText').css("opacity","0");
+            $('.frontIcon').css("display","block");
+
+            $(".frontIcon").mouseenter(function(){
+                $(this).siblings().css("opacity","1");
+                $(this).css('transform','scale(1.1,1.1)');
+            });
+        
+            $(".frontIcon").mouseleave(function(){
+                $(this).siblings().css("opacity","0");
+                $(this).css('transform','scale(1)');
+            });
+        }
+        else if($(window).width() <= 749){
+            $('.frontText').css("opacity","1");
+            $('.frontIcon').css("display","none");
+        }
+
+    });
+
+    if($(window).width() > 749) { 		
+        $('.frontText').css("opacity","0");
+        $('.frontIcon').css("display","block");
+
+        $(".frontIcon").mouseenter(function(){
+            $(this).siblings().css("opacity","1");
+            $(this).css('transform','scale(1.1,1.1)');
+        });
+    
+        $(".frontIcon").mouseleave(function(){
+            $(this).siblings().css("opacity","0");
+            $(this).css('transform','scale(1)');
+        });
+    }
+    else if($(window).width() <= 749){
+        // $('.frontText').css("opacity","1");
+        $('.frontIcon').css("display","none");
+    }
 });
+
+
