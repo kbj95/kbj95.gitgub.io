@@ -277,123 +277,130 @@
         </section>
 
         <!-- 프로젝트 -->
-        <section class="container pb-2 pb-md-3 py-lg-5" id="box3">
-            <div class="row">
-                <aside class="col-lg-3 col-md-4">
-                    <div class="pt-5"></div> 
-                </aside>
-                <div class="col-md-8 offset-lg-1 mt-n3 pt-md-5 mt-n3 mt-md-0 ms-3 ms-md-0">
-                    <div class="ps-md-3 ps-lg-0 mt-md-2 py-md-4">
-                        <h1 class="fc_blue fw-bold">Project</h1>
+        <section id="box3">
+            <div class="container pb-2 pb-md-3 py-lg-5">
+                <div class="row">
+                    <aside class="col-lg-3 col-md-4">
+                        <div class="pt-5"></div> 
+                    </aside>
+                    <div class="col-md-8 offset-lg-1 mt-n3 pt-md-5 mt-n3 mt-md-0 ms-3 ms-md-0">
+                        <div class="ps-md-3 ps-lg-0 mt-md-2 py-md-4">
+                            <h1 class="fc_blue fw-bold">Project</h1>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <!-- 2차 3차 프로젝트 -->
-            <div class="row align-items-center pb-md-3 py-lg-5">
-                <!-- 오른쪽 영역 -->
-                <div class="col-lg-6 col-xl-5 offset-lg-1 offset-xl-2 order-md-2 mb-2 mb-md-0 pb-4 pb-md-0">
-                    <div class="mx-auto mx-md-0 mt-5 mt-xl-1">
-                        <a data-bs-toggle="modal" data-bs-target="#imgDetail">
-                            <img src="./img/mainScreen.png" class="larger rellax d-block ms-2 shadow"  data-rellax-percentage="0.5" data-rellax-speed="-0.5" data-disable-parallax-down="lg" style="width: 95%;">
-                        </a>
+                <!-- 2차 3차 프로젝트 -->
+                <div class="row align-items-center pb-md-3 py-lg-5">
+                    <!-- 오른쪽 영역 -->
+                    <div class="col-lg-6 col-xl-5 offset-lg-1 offset-xl-2 order-md-2 mb-2 mb-md-0 pb-4 pb-md-0">
+                        <div class="mx-auto mx-md-0 mt-5 mt-xl-1">
+                            <a data-bs-toggle="modal" data-bs-target="#imgDetail">
+                                <img src="./img/mainScreen.png" class="larger rellax d-block ms-2 shadow"  data-rellax-percentage="0.5" data-rellax-speed="-0.5" data-disable-parallax-down="lg" style="width: 95%;">
+                            </a>
+                        </div>
+                    </div>
+                    <!-- 이미지크게보기 모달 -->
+                    <div class="modal" tabindex="-1" id="imgDetail">
+                        <div class="modal-dialog modal-fullscreen">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">크게보기</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="./img/mainScreen.png" alt="">
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 왼쪽 영역 -->
+                    <div class="col-md-6 col-lg-5 col-xl-4 offset-xl-1 order-md-1 pd-md-4">
+                        <h2 class="p-3 pb-md-0">2nd & 3rd Project
+                            <a href="https://github.com/PHP-506-wdye/project-2" target="_blank">
+                                <img src="./img/github.png" class="icon">
+                            </a>
+                        </h2>
+                        <ul class="list-unstyled pb-3 mb-3 d-inline-block">
+                            <li class="align-items-center mb-2"><i class="bx bx-check-circle fs-xl active me-2"></i>
+                                프로젝트명 : REBORN (식단 관리 서비스)
+                            </li>
+                            <li class="align-items-center mb-2"><i class="bx bx-check-circle fs-xl active me-2"></i>
+                                개발기간<br> - 2차 : 2023-06-09 ~ 2023-06-28
+                                        <br>- 3차 : 2023-07-14 ~ 2023-07-26
+                            </li>
+                            <li class="align-items-center mb-2"><i class="bx bx-check-circle fs-xl active me-2"></i>
+                                담당업무<br>- 2차 : 메인페이지,칼로리 및 영양소 통계, 즐겨 찾는 식단 등록, 식단 수정 및 삭제
+                                <br>- 3차 : 구글로그인, 비밀번호 찾기, 회원가입, 회원정보 페이지, 관리자 페이지(로그인, 사용자 & 관리자 음식 관리페이지)
+                            </li>
+                            <li class="align-items-center mb-2"><i class="bx bx-check-circle fs-xl active me-2"></i>
+                                <a href="https://docs.google.com/document/d/1XQEF0A3ZqKVzeFnXu3m6xYsHkFk_joIn4TEkwm3O-Ns/edit?usp=sharing" target="_blank" class="fc_blue">API 매뉴얼</a>
+                            </li>
+                            <li class="align-items-center mb-2"><i class="bx bx-check-circle fs-xl active me-2"></i>
+                                <a href="https://www.canva.com/design/DAFpma63MDA/jFHxAMayXLwd1fSh8gIA1A/view?utm_content=DAFpma63MDA&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink" target="_blank" class="fc_blue">3차 프로젝트 PPT</a>
+                            </li>
+                            <li class="align-items-center mb-2"><i class="bx bx-check-circle fs-xl active me-2"></i>
+                                <a href="https://www.canva.com/design/DAFnEjbiGy0/HVmbcWDp7ID0kHIMiGu89g/view?utm_content=DAFnEjbiGy0&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink" target="_blank" class="fc_blue">2차 프로젝트 PPT</a>
+                            </li>
+                        </ul>
+                        <br>
+                        <button type="button" class="custom-btn btn-3 mb-5 mb-md-0" data-bs-toggle="modal" data-bs-target="#pjModal">
+                            <span>시연 동영상</span>
+                        </button>
                     </div>
                 </div>
-                <!-- 이미지크게보기 모달 -->
-                <div class="modal" tabindex="-1" id="imgDetail">
-                    <div class="modal-dialog modal-fullscreen">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title">크게보기</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>     
+            <div class="bg-light" style="width: 100vw; min-height: 500px;">
+                <!-- 3차 모바일 -->
+                <div class="container mt-3 pt-md-2 pt-lg-4 pb-2 pb-md-4 pb-lg-5">
+                    <h2 class="text-center pb-2 pb-md-0 mb-4 mb-md-5 pt-4">mobile ver.(반응형)</h2>
+                    <div class="position-relative">
+                        <!-- Phone frame -->
+                        <div class="position-absolute top-0 start-50 translate-middle-x h-100 w-100 w-md-33 zindex-5">
+                            <div class="d-flex bg-repeat-0 bg-size-cover w-100 h-100 mx-auto" style="max-width: 328px; background-image: url(img/phone-frame.png); background-size: 328px;">
                             </div>
-                            <div class="modal-body">
-                                <img src="./img/mainScreen.png" alt="">
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+            
+                        <!-- Phone screen -->
+                        <div class="position-absolute top-0 start-50 translate-middle-x w-md-33">
+                            <div class="d-flex bg-repeat-0 bg-size-cover mx-auto" style="max-width: 328px; background-image: url(img/phone-screen.png);"></div>
+                        </div>
+                        <div class="swiper mobileSwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="img/mainMobile.png" class="d-block mx-auto" width="328" alt="Screen">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/infoMobile.png" class="d-block mx-auto" width="328" alt="Screen">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/pwMobile.png" class="d-block mx-auto" width="328" alt="Screen">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/myboardMobile.png" class="d-block mx-auto" width="328" alt="Screen">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/myreplyMobile.png" class="d-block mx-auto" width="328" alt="Screen">
+                                </div>
+                                <div class="swiper-scrollbar"></div>
                             </div>
                         </div>
                     </div>
                 </div>
-
-                <!-- 왼쪽 영역 -->
-                <div class="col-md-6 col-lg-5 col-xl-4 offset-xl-1 order-md-1 pd-md-4">
-                    <h2 class="p-3 pb-md-0">2nd & 3rd Project
-                        <a href="https://github.com/PHP-506-wdye/project-2" target="_blank">
-                            <img src="./img/github.png" class="icon">
-                        </a>
-                    </h2>
-                    <ul class="list-unstyled pb-3 mb-3 d-inline-block">
-                        <li class="align-items-center mb-2"><i class="bx bx-check-circle fs-xl active me-2"></i>
-                            프로젝트명 : REBORN (식단 관리 서비스)
-                        </li>
-                        <li class="align-items-center mb-2"><i class="bx bx-check-circle fs-xl active me-2"></i>
-                            개발기간<br> - 2차 : 2023-06-09 ~ 2023-06-28
-                                    <br>- 3차 : 2023-07-14 ~ 2023-07-26
-                        </li>
-                        <li class="align-items-center mb-2"><i class="bx bx-check-circle fs-xl active me-2"></i>
-                            담당업무<br>- 2차 : 메인페이지,칼로리 및 영양소 통계, 즐겨 찾는 식단 등록, 식단 수정 및 삭제
-                            <br>- 3차 : 구글로그인, 비밀번호 찾기, 회원가입, 회원정보 페이지, 관리자 페이지(로그인, 사용자 & 관리자 음식 관리페이지)
-                        </li>
-                        <li class="align-items-center mb-2"><i class="bx bx-check-circle fs-xl active me-2"></i>
-                            <a href="https://docs.google.com/document/d/1XQEF0A3ZqKVzeFnXu3m6xYsHkFk_joIn4TEkwm3O-Ns/edit?usp=sharing" target="_blank" class="fc_blue">API 매뉴얼</a>
-                        </li>
-                        <li class="align-items-center mb-2"><i class="bx bx-check-circle fs-xl active me-2"></i>
-                            <a href="https://www.canva.com/design/DAFpma63MDA/jFHxAMayXLwd1fSh8gIA1A/view?utm_content=DAFpma63MDA&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink" target="_blank" class="fc_blue">3차 프로젝트 PPT</a>
-                        </li>
-                        <li class="align-items-center mb-2"><i class="bx bx-check-circle fs-xl active me-2"></i>
-                            <a href="https://www.canva.com/design/DAFnEjbiGy0/HVmbcWDp7ID0kHIMiGu89g/view?utm_content=DAFnEjbiGy0&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink" target="_blank" class="fc_blue">2차 프로젝트 PPT</a>
-                        </li>
-                    </ul>
-                    <br>
-                    <button type="button" class="custom-btn btn-3 mb-5 mb-md-0" data-bs-toggle="modal" data-bs-target="#pjModal">
-                        <span>시연 동영상</span>
-                    </button>
-                </div>
             </div>
-            <!-- 3차 모바일 -->
-            <div class="container mt-3 pt-md-2 pt-lg-4 pb-2 pb-md-4 pb-lg-5 bg-light">
-                <h2 class="text-center pb-2 pb-md-0 mb-4 mb-md-5 pt-4">mobile ver.(반응형)</h2>
-                <div class="position-relative">
-                    <!-- Phone frame -->
-                    <div class="position-absolute top-0 start-50 translate-middle-x h-100 w-100 w-md-33 zindex-5">
-                        <div class="d-flex bg-repeat-0 bg-size-cover w-100 h-100 mx-auto" style="max-width: 328px; background-image: url(img/phone-frame.png); background-size: 328px;"></div>
-                    </div>
-        
-                    <!-- Phone screen -->
-                    <div class="position-absolute top-0 start-50 translate-middle-x w-md-33">
-                        <div class="d-flex bg-repeat-0 bg-size-cover mx-auto" style="max-width: 328px; background-image: url(img/phone-screen.png);"></div>
-                    </div>
-                    <div class="swiper mobileSwiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <img src="img/mainMobile.png" class="d-block mx-auto" width="328" alt="Screen">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="img/infoMobile.png" class="d-block mx-auto" width="328" alt="Screen">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="img/pwMobile.png" class="d-block mx-auto" width="328" alt="Screen">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="img/myboardMobile.png" class="d-block mx-auto" width="328" alt="Screen">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="img/myreplyMobile.png" class="d-block mx-auto" width="328" alt="Screen">
-                            </div>
-                            <div class="swiper-scrollbar"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- 1차 프로젝트 -->
+            <div class="container pb-2 pb-md-3 py-lg-5">
+                            <!-- 1차 프로젝트 -->
             <div class="row align-items-center pb-md-3 py-lg-5">
                 <!-- 오른쪽 영역 -->
                 <div class="col-lg-6 col-xl-5 offset-lg-1 offset-xl-2 order-md-2 mb-2 mb-md-0 pb-4 pb-md-0">
                     <div class="mx-auto mx-md-0 mt-5 mt-xl-1">
+                        <div id="phoneFrame">
+                        </div>
                         <!-- <a data-bs-toggle="modal" data-bs-target="#imgDetail">
-                            <img src="./img/phoneTest.png" class="larger rellax d-block ms-2 shadow"  data-rellax-percentage="0.5" data-rellax-speed="-0.5" data-disable-parallax-down="xl" style="width: 50%;">
+                            <img src="./img/phoneTest.png" class="rellax d-block ms-2 shadow"  data-rellax-percentage="0.5" data-rellax-speed="-0.5" data-disable-parallax-down="xl" style="width: 50%;">
                         </a> -->
                     </div>
                 </div>
@@ -439,11 +446,14 @@
                     </button> -->
                 </div>
             </div>
+            </div>
 
-        </section>  
+
+        </section>
 
 
-        <!-- Modal -->
+
+        <!-- 2~3차프로젝트 동영상 Modal -->
         <div class="modal fade" id="pjModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-xl">
                 <div class="modal-content">
@@ -584,8 +594,8 @@
                 dynamicBullets: true,
             },
             navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
             },
         });
 

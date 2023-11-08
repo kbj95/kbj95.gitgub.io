@@ -11,7 +11,7 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="icon" href="img/favicon.ico">
 
-  <script>
+  <!-- <script>
     let mode = window.localStorage.getItem('mode'),
         root = document.getElementsByTagName('html')[0];
     if (mode !== null && mode === 'dark') {
@@ -19,7 +19,7 @@
     } else {
       root.classList.remove('dark-mode');
     }
-  </script>
+  </script> -->
 </head>
 <body>
 
@@ -99,18 +99,259 @@
 
     </div>
 
+    <!-- 테스트2번 -->
+    <section class="py-5 mb-md-2" style="background: radial-gradient(116.18% 118% at 50% 100%, rgba(99, 102, 241, 0.1) 0%, rgba(218, 70, 239, 0.05) 41.83%, rgba(241, 244, 253, 0.07) 82.52%);">
+      <div class="container py-lg-4">
+        <div class="row py-md-3">
+          <div class="col-xl-3 col-lg-4 pt-2">
+            <h2 class="h1 text-center text-lg-start pb-2">Clients are Loving Our App</h2>
+            
+            <!-- Slider prev/next buttons -->
+            <div class="d-flex justify-content-center justify-content-lg-start pt-lg-5">
+              <button type="button" id="prev-review" class="btn btn-prev btn-icon btn-sm me-3" aria-label="Previous slide" tabindex="0" aria-controls="swiper-wrapper-6d4d10b034fb0a4d1">
+                <i class="bx bx-chevron-left"></i>
+              </button>
+              <button type="button" id="next-review" class="btn btn-next btn-icon btn-sm" aria-label="Next slide" tabindex="0" aria-controls="swiper-wrapper-6d4d10b034fb0a4d1">
+                <i class="bx bx-chevron-right"></i>
+              </button>
+            </div>
+          </div>
+          <div class="col-lg-8 offset-xl-1 pt-4 mt-2 mt-md-3 mt-lg-0 pt-lg-0">
+            <div class="px-2 px-sm-0">
+              <div class="swiper testSwiper mx-n2 swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden">
+                <div class="swiper-wrapper" id="swiper-wrapper-6d4d10b034fb0a4d1" aria-live="polite" style="transform: translate3d(-1320px, 0px, 0px); transition-duration: 0ms;"><div class="swiper-slide h-auto pb-3 px-2 pt-4 swiper-slide-duplicate swiper-slide-duplicate-next" data-swiper-slide-index="2" role="group" aria-label="3 / 4" style="width: 432px; margin-right: 8px;">
+                    <div class="d-flex flex-column h-100 px-2 px-sm-0 mb-0">
+                      <div class="card h-100 position-relative border-0 shadow-sm pt-4">
+                        <span class="btn btn-icon btn-primary shadow-primary pe-none position-absolute top-0 start-0 translate-middle-y ms-4">
+                          <i class="bx bxs-quote-left"></i>
+                        </span>
+                        <blockquote class="card-body pb-4 mb-0">
+                          <div class="text-nowrap pt-1 mb-3">
+                            <i class="bx bxs-star text-warning"></i>
+                            <i class="bx bxs-star text-warning"></i>
+                            <i class="bx bxs-star text-warning"></i>
+                            <i class="bx bxs-star text-warning"></i>
+                            <i class="bx bx-star text-muted opacity-75"></i>
+                          </div>
+                          <p class="fs-lg mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ipsum odio, bibendum ornare mi at, efficitur urna. Sit pretium aliquam tempor, orci dolor sed maecenas.</p>
+                        </blockquote>
+                        <div class="card-footer d-flex align-items-center border-0 pt-0">
+                          <img src="assets/img/avatar/44.png" width="48" class="rounded-circle ms-n1" alt="Annette Black">
+                          <div class="ps-2 ms-1">
+                            <h6 class="fs-base fw-semibold mb-0">Annette Black</h6>
+                            <span class="fs-sm text-muted">Project Manager</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div><div class="swiper-slide h-auto pb-3 px-2 pt-4 swiper-slide-duplicate" data-swiper-slide-index="3" role="group" aria-label="4 / 4" style="width: 432px; margin-right: 8px;">
+                    <div class="d-flex flex-column h-100 px-2 px-sm-0 mb-0">
+                      <div class="card h-100 position-relative border-0 shadow-sm pt-4">
+                        <span class="btn btn-icon btn-primary shadow-primary pe-none position-absolute top-0 start-0 translate-middle-y ms-4">
+                          <i class="bx bxs-quote-left"></i>
+                        </span>
+                        <blockquote class="card-body pb-4 mb-0">
+                          <div class="text-nowrap pt-1 mb-3">
+                            <i class="bx bxs-star text-warning"></i>
+                            <i class="bx bxs-star text-warning"></i>
+                            <i class="bx bxs-star text-warning"></i>
+                            <i class="bx bxs-star text-warning"></i>
+                            <i class="bx bxs-star text-warning"></i>
+                          </div>
+                          <p class="fs-lg mb-0">Etiam augue ante, imperdiet et nunc sed, bibendum faucibus est. Suspendisse egestas facilisis erat eu eleifend. Pellentesque finibus congue egestas egestas suspendisse blandit justo.</p>
+                        </blockquote>
+                        <div class="card-footer d-flex align-items-center border-0 pt-0">
+                          <img src="assets/img/avatar/45.png" width="48" class="rounded-circle ms-n1" alt="Jerome Bell">
+                          <div class="ps-2 ms-1">
+                            <h6 class="fs-base fw-semibold mb-0">Jerome Bell</h6>
+                            <span class="fs-sm text-muted">Developer</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+    
+                  <!-- Item -->
+                  <div class="swiper-slide h-auto pt-4 pb-3 px-2 swiper-slide-prev" data-swiper-slide-index="0" role="group" aria-label="1 / 4" style="width: 432px; margin-right: 8px;">
+                    <div class="d-flex flex-column h-100 px-2 px-sm-0 mb-0">
+                      <div class="card h-100 position-relative border-0 shadow-sm pt-4">
+                        <span class="btn btn-icon btn-primary shadow-primary pe-none position-absolute top-0 start-0 translate-middle-y ms-4">
+                          <i class="bx bxs-quote-left"></i>
+                        </span>
+                        <blockquote class="card-body pb-4 mb-0">
+                          <div class="text-nowrap pt-1 mb-3">
+                            <i class="bx bxs-star text-warning"></i>
+                            <i class="bx bxs-star text-warning"></i>
+                            <i class="bx bxs-star text-warning"></i>
+                            <i class="bx bx-star text-muted opacity-75"></i>
+                            <i class="bx bx-star text-muted opacity-75"></i>
+                          </div>
+                          <p class="fs-lg mb-0">Sit pretium aliquam tempor, orci dolor sed maecenas rutrum sagittis. Laoreet posuere rhoncus, egestas lacus, egestas justo aliquam vel. Nisi vitae lectus hac hendrerit. Montes justo turpis sit amet.</p>
+                        </blockquote>
+                        <div class="card-footer d-flex align-items-center border-0 pt-0">
+                          <img src="assets/img/avatar/42.png" width="48" class="rounded-circle ms-n1" alt="Fannie Summers">
+                          <div class="ps-2 ms-1">
+                            <h6 class="fs-base fw-semibold mb-0">Fannie Summers</h6>
+                            <span class="fs-sm text-muted">Designer</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+    
+                  <!-- Item -->
+                  <div class="swiper-slide h-auto pb-3 px-2 pt-4 swiper-slide-active" data-swiper-slide-index="1" role="group" aria-label="2 / 4" style="width: 432px; margin-right: 8px;">
+                    <div class="d-flex flex-column h-100 px-2 px-sm-0 mb-0">
+                      <div class="card h-100 position-relative border-0 shadow-sm pt-4">
+                        <span class="btn btn-icon btn-primary shadow-primary pe-none position-absolute top-0 start-0 translate-middle-y ms-4">
+                          <i class="bx bxs-quote-left"></i>
+                        </span>
+                        <blockquote class="card-body pb-4 mb-0">
+                          <div class="text-nowrap pt-1 mb-3">
+                            <i class="bx bxs-star text-warning"></i>
+                            <i class="bx bxs-star text-warning"></i>
+                            <i class="bx bxs-star text-warning"></i>
+                            <i class="bx bxs-star text-warning"></i>
+                            <i class="bx bxs-star text-warning"></i>
+                          </div>
+                          <p class="fs-lg mb-0">Nunc senectus leo vel venenatis accumsan vestibulum sollicitudin amet porttitor. Nisl bibendum nulla tincidunt eu enim ornare dictumst sit amet. Dictum pretium dolor tincidunt egestas eget nunc.</p>
+                        </blockquote>
+                        <div class="card-footer d-flex align-items-center border-0 pt-0">
+                          <img src="assets/img/avatar/43.png" width="48" class="rounded-circle ms-n1" alt="Robert Fox">
+                          <div class="ps-2 ms-1">
+                            <h6 class="fs-base fw-semibold mb-0">Robert Fox</h6>
+                            <span class="fs-sm text-muted">QA Engineer</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+    
+                  <!-- Item -->
+                  <div class="swiper-slide h-auto pb-3 px-2 pt-4 swiper-slide-next" data-swiper-slide-index="2" role="group" aria-label="3 / 4" style="width: 432px; margin-right: 8px;">
+                    <div class="d-flex flex-column h-100 px-2 px-sm-0 mb-0">
+                      <div class="card h-100 position-relative border-0 shadow-sm pt-4">
+                        <span class="btn btn-icon btn-primary shadow-primary pe-none position-absolute top-0 start-0 translate-middle-y ms-4">
+                          <i class="bx bxs-quote-left"></i>
+                        </span>
+                        <blockquote class="card-body pb-4 mb-0">
+                          <div class="text-nowrap pt-1 mb-3">
+                            <i class="bx bxs-star text-warning"></i>
+                            <i class="bx bxs-star text-warning"></i>
+                            <i class="bx bxs-star text-warning"></i>
+                            <i class="bx bxs-star text-warning"></i>
+                            <i class="bx bx-star text-muted opacity-75"></i>
+                          </div>
+                          <p class="fs-lg mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ipsum odio, bibendum ornare mi at, efficitur urna. Sit pretium aliquam tempor, orci dolor sed maecenas.</p>
+                        </blockquote>
+                        <div class="card-footer d-flex align-items-center border-0 pt-0">
+                          <img src="assets/img/avatar/44.png" width="48" class="rounded-circle ms-n1" alt="Annette Black">
+                          <div class="ps-2 ms-1">
+                            <h6 class="fs-base fw-semibold mb-0">Annette Black</h6>
+                            <span class="fs-sm text-muted">Project Manager</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+    
+                  <!-- Item -->
+                  <div class="swiper-slide h-auto pb-3 px-2 pt-4" data-swiper-slide-index="3" role="group" aria-label="4 / 4" style="width: 432px; margin-right: 8px;">
+                    <div class="d-flex flex-column h-100 px-2 px-sm-0 mb-0">
+                      <div class="card h-100 position-relative border-0 shadow-sm pt-4">
+                        <span class="btn btn-icon btn-primary shadow-primary pe-none position-absolute top-0 start-0 translate-middle-y ms-4">
+                          <i class="bx bxs-quote-left"></i>
+                        </span>
+                        <blockquote class="card-body pb-4 mb-0">
+                          <div class="text-nowrap pt-1 mb-3">
+                            <i class="bx bxs-star text-warning"></i>
+                            <i class="bx bxs-star text-warning"></i>
+                            <i class="bx bxs-star text-warning"></i>
+                            <i class="bx bxs-star text-warning"></i>
+                            <i class="bx bxs-star text-warning"></i>
+                          </div>
+                          <p class="fs-lg mb-0">Etiam augue ante, imperdiet et nunc sed, bibendum faucibus est. Suspendisse egestas facilisis erat eu eleifend. Pellentesque finibus congue egestas egestas suspendisse blandit justo.</p>
+                        </blockquote>
+                        <div class="card-footer d-flex align-items-center border-0 pt-0">
+                          <img src="assets/img/avatar/45.png" width="48" class="rounded-circle ms-n1" alt="Jerome Bell">
+                          <div class="ps-2 ms-1">
+                            <h6 class="fs-base fw-semibold mb-0">Jerome Bell</h6>
+                            <span class="fs-sm text-muted">Developer</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                <div class="swiper-slide h-auto pt-4 pb-3 px-2 swiper-slide-duplicate swiper-slide-duplicate-prev" data-swiper-slide-index="0" role="group" aria-label="1 / 4" style="width: 432px; margin-right: 8px;">
+                    <div class="d-flex flex-column h-100 px-2 px-sm-0 mb-0">
+                      <div class="card h-100 position-relative border-0 shadow-sm pt-4">
+                        <span class="btn btn-icon btn-primary shadow-primary pe-none position-absolute top-0 start-0 translate-middle-y ms-4">
+                          <i class="bx bxs-quote-left"></i>
+                        </span>
+                        <blockquote class="card-body pb-4 mb-0">
+                          <div class="text-nowrap pt-1 mb-3">
+                            <i class="bx bxs-star text-warning"></i>
+                            <i class="bx bxs-star text-warning"></i>
+                            <i class="bx bxs-star text-warning"></i>
+                            <i class="bx bx-star text-muted opacity-75"></i>
+                            <i class="bx bx-star text-muted opacity-75"></i>
+                          </div>
+                          <p class="fs-lg mb-0">Sit pretium aliquam tempor, orci dolor sed maecenas rutrum sagittis. Laoreet posuere rhoncus, egestas lacus, egestas justo aliquam vel. Nisi vitae lectus hac hendrerit. Montes justo turpis sit amet.</p>
+                        </blockquote>
+                        <div class="card-footer d-flex align-items-center border-0 pt-0">
+                          <img src="assets/img/avatar/42.png" width="48" class="rounded-circle ms-n1" alt="Fannie Summers">
+                          <div class="ps-2 ms-1">
+                            <h6 class="fs-base fw-semibold mb-0">Fannie Summers</h6>
+                            <span class="fs-sm text-muted">Designer</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div><div class="swiper-slide h-auto pb-3 px-2 pt-4 swiper-slide-duplicate swiper-slide-duplicate-active" data-swiper-slide-index="1" role="group" aria-label="2 / 4" style="width: 432px; margin-right: 8px;">
+                    <div class="d-flex flex-column h-100 px-2 px-sm-0 mb-0">
+                      <div class="card h-100 position-relative border-0 shadow-sm pt-4">
+                        <span class="btn btn-icon btn-primary shadow-primary pe-none position-absolute top-0 start-0 translate-middle-y ms-4">
+                          <i class="bx bxs-quote-left"></i>
+                        </span>
+                        <blockquote class="card-body pb-4 mb-0">
+                          <div class="text-nowrap pt-1 mb-3">
+                            <i class="bx bxs-star text-warning"></i>
+                            <i class="bx bxs-star text-warning"></i>
+                            <i class="bx bxs-star text-warning"></i>
+                            <i class="bx bxs-star text-warning"></i>
+                            <i class="bx bxs-star text-warning"></i>
+                          </div>
+                          <p class="fs-lg mb-0">Nunc senectus leo vel venenatis accumsan vestibulum sollicitudin amet porttitor. Nisl bibendum nulla tincidunt eu enim ornare dictumst sit amet. Dictum pretium dolor tincidunt egestas eget nunc.</p>
+                        </blockquote>
+                        <div class="card-footer d-flex align-items-center border-0 pt-0">
+                          <img src="assets/img/avatar/43.png" width="48" class="rounded-circle ms-n1" alt="Robert Fox">
+                          <div class="ps-2 ms-1">
+                            <h6 class="fs-base fw-semibold mb-0">Robert Fox</h6>
+                            <span class="fs-sm text-muted">QA Engineer</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div></div>
+              <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
 
 
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-      <script src="js/smooth-scroll.polyfills.min.js"></script>
-      <script src="js/rellax.min.js"></script>
+      <!-- <script src="js/smooth-scroll.polyfills.min.js"></script> -->
+      <!-- <script src="js/rellax.min.js"></script> -->
       <script src="js/swiper-bundle.min.js"></script>
-      <script src="js/theme.min.js"></script>
+      <!-- <script src="js/theme.min.js"></script> -->
       <script src="js/jquery.min.js"></script>
       <script src="js/script copy.js"></script>
 
       <script>
-                var swiper = new Swiper(".mobileSwiper", {
+        var swiper = new Swiper(".mobileSwiper", {
             // slidesPerView: $(window).width() <= 1430 ? '1' : '3',
             slidesPerView: '1',
             spaceBetween: 30,
@@ -123,6 +364,19 @@
             centeredSlides : true, // true시에 슬라이드가 가운데로 배치
             "breakpoints": {
                 "768": { "slidesPerView": 3 }
+            },
+        });
+
+        var swiper = new Swiper(".testSwiper", {
+            slidesPerView: '1',
+            spaceBetween: 8,
+            navigation: {
+                nextEl: "#prev-review",
+                prevEl: "#next-review",
+            },
+            loop : true,
+            "breakpoints": {
+                "600": { "slidesPerView": 2 }
             },
         });
       </script>

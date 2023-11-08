@@ -308,6 +308,15 @@ span.pl{
 /* #box3{
   background: yellowgreen;
 } */
+div#phoneFrame{
+  max-width: 328px;
+  min-height: 500px;
+  background-image: url(../img/phone-frame.png);
+  background-size: 70%;
+  /* background-size: cover; */
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
 
 /* 미니프로젝트 */
 #box4{
