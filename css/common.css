@@ -30,6 +30,9 @@ section{
 .fc_blue{
   color: #6d80a1;
 }
+.active{
+  color: pink;
+}
 .swiper-pagination-bullet-active{
   background: pink !important;
 }
@@ -166,6 +169,11 @@ button {
   height: 50px;
   border-radius: 50%;
 }
+button.btn-icon{
+  background: #fdf6f6;
+  border-radius: 50%;
+  box-shadow: 0 5px 5px #efefef;
+}
 
 /* 네비 */
 nav{
@@ -207,7 +215,7 @@ nav a{
   text-align: center;
   text-underline-position : under;
   text-decoration-thickness: 2px;
-  text-decoration-color: rgb(218, 191, 196);
+  text-decoration-color: #dabfc4;
   color: #6d80a1;
   padding-top: 300px;
   overflow: hidden;
@@ -320,15 +328,22 @@ div#phoneFrame{
 
 /* 미니프로젝트 */
 #box4{
-  background: gray;
-  min-height: 1000px;
+  /* background: gray; */
+  min-height: 500px;
 }
-.active{
-  color: pink;
+span.custom_icon{
+  background: #6d80a1;
+  color: #ffffff;
 }
 .mobileSwiper{
   min-height: 664px;
 }
+
+/* 디자인 */
+/* section#box5{
+  min-height: 500px;
+  background: #ccc;
+} */
 
 /* loading */
 #load{
