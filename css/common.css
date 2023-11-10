@@ -331,6 +331,9 @@ div#phoneFrame{
   /* background: gray; */
   min-height: 500px;
 }
+#box4 button.btn-icon{
+  background: none;
+}
 span.custom_icon{
   background: #6d80a1;
   color: #ffffff;
