@@ -7,7 +7,7 @@ h1{
   overflow: hidden;
 }
 #wrap{
-  /* display: none; */
+  display: none;
   box-sizing: border-box;
 }
 a{
