@@ -46,7 +46,8 @@
                 </ul>
             </nav>
             <h1 class="display-1 fw-bold textS">PORTFOLIO</h1>
-            <div><a href="#box1"><img class="down" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAAAXNSR0IArs4c6QAAAUVJREFUaEPt18ENgzAMBdBk0aLe2xkIM9ABymidhIpTK9GK+Mc2MnzONuT5xwdyOtmTT+ZNBB89cSbMhA82AV7pgwW64jBhScL3Ms2Seq3asXRwUHDjcniCtSLceA8TFgyaV1owrJClTQlHFBMcMTXJmZmwZFrS2tsw9XlO5btvzqk8+m6Qvgutd02Y4JQSE0bvamUfr3TloKAy7jB3GLo4oibusGhcwmLuMHdYeGWAcu4wMLTqFu5wtB3+lVh13HBhvo7l8kTbm3fYF92GXYbUDF5e4oNux6qB7dE6WFWwHVoPqw7WR+tiTcB6aH2sGbgdbYM1BeNoO6w5WI62xbqA69H2WDfwNtoH6wr+j/bDuoPXaF/sLuAPOr9a/np2+1tCP7xXn8rf0l6HR75LMDK1SD1MOFJayFmZMDK1SD1MOFJayFnfScvXPROtkjcAAAAASUVORK5CYII="/></a></div>
+            <div><a href="#box1"><img class="down" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAAAXNSR0IArs4c6QAAAUVJREFUaEPt18ENgzAMBdBk0aLe2xkIM9ABymidhIpTK9GK+Mc2MnzONuT5xwdyOtmTT+ZNBB89cSbMhA82AV7pgwW64jBhScL3Ms2Seq3asXRwUHDjcniCtSLceA8TFgyaV1owrJClTQlHFBMcMTXJmZmwZFrS2tsw9XlO5btvzqk8+m6Qvgutd02Y4JQSE0bvamUfr3TloKAy7jB3GLo4oibusGhcwmLuMHdYeGWAcu4wMLTqFu5wtB3+lVh13HBhvo7l8kTbm3fYF92GXYbUDF5e4oNux6qB7dE6WFWwHVoPqw7WR+tiTcB6aH2sGbgdbYM1BeNoO6w5WI62xbqA69H2WDfwNtoH6wr+j/bDuoPXaF/sLuAPOr9a/np2+1tCP7xXn8rf0l6HR75LMDK1SD1MOFJayFmZMDK1SD1MOFJayFnfScvXPROtkjcAAAAASUVORK5CYII="/></a>
+            </div>
         </section>
 
         <!-- 프로필 -->
@@ -359,7 +360,13 @@
             <!-- 3차 모바일 -->
             <div class="bg-light mb-5" style="width: 100vw; min-height: 500px;">
                 <div class="container mt-3 pt-md-2 pt-lg-4 pb-2 pb-md-4 pb-lg-5">
-                    <h2 class="text-center pb-2 pb-md-0 mb-4 mb-md-5 pt-4">mobile ver.(반응형)</h2>
+                    <h2 class="text-center pb-2 pb-md-0 mb-4 mb-md-5 pt-4">mobile ver.(반응형)
+                        <div class="left">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-right-square" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm4.5 5.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                            </svg>
+                        </div>
+                    </h2>
                     <div class="position-relative">
                         <!-- Phone frame -->
                         <div class="position-absolute top-0 start-50 translate-middle-x h-100 w-100 w-md-33 zindex-5">
@@ -372,7 +379,7 @@
                             <div class="d-flex bg-repeat-0 bg-size-cover mx-auto" style="max-width: 328px; background-image: url(img/phone-screen.png);"></div>
                         </div>
                         <div class="swiper mobileSwiper">
-                            <div class="swiper-wrapper">
+                            <div class="swiper-wrapper" id="swiper-wrapper-pjMobile">
                                 <div class="swiper-slide">
                                     <img src="img/mainMobile.png" class="d-block mx-auto" width="328" alt="Screen">
                                 </div>
@@ -572,19 +579,19 @@
                             <h2 class="h2 text-center text-lg-start pb-2">Personal Project<br></h2>                        
                             <!-- Slider prev/next buttons -->
                             <div class="d-flex justify-content-center justify-content-lg-start">
-                                <button type="button" id="prev-review" class="btn btn-icon btn-sm me-3" aria-label="Previous slide" tabindex="0" aria-controls="swiper-wrapper-6d4d10b034fb0a4d1">
-                                <i class="bx bx-chevron-left"></i>
+                                <button type="button" id="prev-review" class="btn btn-icon btn-sm me-3" aria-label="Previous slide" tabindex="0" aria-controls="swiper-wrapper-pp">
+                                    <i class="bx bx-chevron-left"></i>
                                 </button>
-                                <button type="button" id="next-review" class="btn btn-icon btn-sm" aria-label="Next slide" tabindex="0" aria-controls="swiper-wrapper-6d4d10b034fb0a4d1">
-                                <i class="bx bx-chevron-right"></i>
+                                <button type="button" id="next-review" class="btn btn-icon btn-sm" aria-label="Next slide" tabindex="0" aria-controls="swiper-wrapper-pp">
+                                    <i class="bx bx-chevron-right"></i>
                                 </button>
                             </div>
                         </div>
                         <div class="col-xl-12 offset-xl-1 pt-4 mt-2 mt-md-3 mt-lg-2 pt-lg-0 pb-5">
                             <div class="px-2 px-sm-0">
                                 <div class="swiper testSwiper mx-n2 swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden">
-                                    <div class="swiper-wrapper" id="swiper-wrapper-6d4d10b034fb0a4d1" aria-live="polite" style="transform: translate3d(-1320px, 0px, 0px); transition-duration: 0ms;">
-                                        <!-- Item1 miniBoard -->
+                                    <div class="swiper-wrapper" id="swiper-wrapper-pp" aria-live="polite" style="transform: translate3d(-1320px, 0px, 0px); transition-duration: 0ms;">
+                                        <!-- Item miniBoard -->
                                         <div class="swiper-slide h-auto pt-4 pb-3 px-2 swiper-slide-prev" data-swiper-slide-index="0" role="group" aria-label="1 / 4" style="width: 432px; margin-right: 8px;">
                                             <div class="d-flex flex-column h-100 px-2 px-sm-0 mb-0">
                                                 <div class="card h-100 position-relative border-0 shadow-sm pt-4">
@@ -610,7 +617,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <!-- Item2 shopping -->
+                                        <!-- Item shopping -->
                                         <div class="swiper-slide h-auto pt-4 pb-3 px-2 swiper-slide-prev" data-swiper-slide-index="0" role="group" aria-label="1 / 4" style="width: 432px; margin-right: 8px;">
                                             <div class="d-flex flex-column h-100 px-2 px-sm-0 mb-0">
                                                 <div class="card h-100 position-relative border-0 shadow-sm pt-4">
@@ -636,7 +643,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <!-- Item3 vuestagram -->
+                                        <!-- Item vuestagram -->
                                         <div class="swiper-slide h-auto pt-4 pb-3 px-2 swiper-slide-prev" data-swiper-slide-index="0" role="group" aria-label="1 / 4" style="width: 432px; margin-right: 8px;">
                                             <div class="d-flex flex-column h-100 px-2 px-sm-0 mb-0">
                                                 <div class="card h-100 position-relative border-0 shadow-sm pt-4">
@@ -662,7 +669,33 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <!-- Item4 naver -->
+                                        <!-- Item laravelBoard -->
+                                        <div class="swiper-slide h-auto pt-4 pb-3 px-2 swiper-slide-prev" data-swiper-slide-index="0" role="group" aria-label="1 / 4" style="width: 432px; margin-right: 8px;">
+                                            <div class="d-flex flex-column h-100 px-2 px-sm-0 mb-0">
+                                                <div class="card h-100 position-relative border-0 shadow-sm pt-4">
+                                                    <span class="btn custom_icon pe-none position-absolute top-0 start-0 translate-middle-y ms-4">
+                                                        <i class='bx bx-edit-alt'></i>
+                                                    </span>
+                                                    <div class="card-body pb-4 mb-0">
+                                                        <h6 class="fs-lg mb-0 fw-bold mb-3">laravelBoard</h6>
+                                                        <img class="card-img-top" src="./img/laravelBoard.png" alt="Card image cap">
+                                                        <p class="align-items-center mt-4"><i class="bx bx-check-circle fs-xl active me-2"></i>
+                                                            개발기간 : 2023-05-26 ~ 2023-06-02
+                                                        </p>
+                                                    </div>
+                                                    <div class="card-footer d-flex align-items-center border-0 pt-1">
+                                                        <a href="https://github.com/kbj95/laravel_board" target="_blank">
+                                                            <img src="./img/github.png" width="48" class="rounded-circle ms-n1">
+                                                        </a>
+                                                        <div class="ps-2 ms-1">
+                                                            <h6 class="fs-base fw-semibold mb-0">PHP</h6>
+                                                            <span class="fs-sm text-muted">Laravel를 사용한 게시판</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Item naver -->
                                         <div class="swiper-slide h-auto pt-4 pb-3 px-2 swiper-slide-prev" data-swiper-slide-index="0" role="group" aria-label="1 / 4" style="width: 432px; margin-right: 8px;">
                                             <div class="d-flex flex-column h-100 px-2 px-sm-0 mb-0">
                                                 <div class="card h-100 position-relative border-0 shadow-sm pt-4">
@@ -770,7 +803,7 @@
             scrollbar: {
                 el: ".swiper-scrollbar",
                 hide: true,
-                // clickable: true,
+                clickable: true,
             },
             autoHeight : true,
             centeredSlides : true, // true시에 슬라이드가 가운데로 배치
@@ -778,15 +811,22 @@
                 "1350": { "slidesPerView": 3 }
             },
             loop: true,
-            autoplay: true,
+            // autoplay: {
+            //     delay: 2000,
+            //     disableOnInteraction: false,
+            // },
+            navigation: {
+                nextEl: "#next-screen",
+                prevEl: "#prev-screen",
+            },
         });
 
         var swiper = new Swiper(".testSwiper", {
             slidesPerView: '1',
             spaceBetween: 8,
             navigation: {
-                nextEl: "#prev-review",
-                prevEl: "#next-review",
+                nextEl: "#next-review",
+                prevEl: "#prev-review",
             },
             loop : true,
             "breakpoints": {

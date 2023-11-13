@@ -226,6 +226,11 @@ nav a{
 0% {margin-top: 0px;}
 100% {margin-top: 10px;}
 }
+.left {animation: motion2 0.4s linear 0s infinite alternate; margin-left: 0;}
+@keyframes motion2 {
+0% {margin-left: 0px;}
+100% {margin-left: 10px;}
+}
 #box0 > div{
   margin: 50px;
   text-align: center;
