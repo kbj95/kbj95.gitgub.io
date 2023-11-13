@@ -40,6 +40,7 @@ section{
   color: pink !important;
 }
 img.larger:hover{transform:scale(1.1,1.1);}
+.right{float:right;}
 
 /* 비디오 */
 video{
@@ -347,10 +348,9 @@ span.custom_icon{
 }
 
 /* 디자인 */
-/* section#box5{
+section#box5{
   min-height: 500px;
-  background: #ccc;
-} */
+}
 
 /* loading */
 #load{

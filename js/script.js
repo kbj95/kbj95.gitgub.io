@@ -117,6 +117,7 @@ $(document).ready(function() {
         // $('.frontText').css("opacity","1");
         $('.frontIcon').css("display","none");
     }
+
 });
 
 
