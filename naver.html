@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta name="keyword" content="네이버">
+        <meta name="description" content="네이버 레이아웃 따라하기">
+        <meta name="author" content="권봉정">
+        <title>네이버</title>
+        <link rel="stylesheet" href="css/naver.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+        <script src="js/naver.js"></script>
+    </head>
+    <body>
+        <!-- hidden searchBox 영역 -->
+        <div id="search">
+            <div class="contentWidth">
+                <h1 id="logo2" class="bg2"></h1>
+                    <div class="searchArea2">|
+                        <input type="text" id="searchText" placeholder="검색어를 입력해 주세요">
+                        <button class="submit2">
+                            <span class="bg2 zoom2"></span>
+                        </button>
+                    </div>
+            </div>
+        </div>
+        <!-- header 영역 -->
+        <header id="header">
+            <div id="popupBar">
+                <div class="contentWidth">
+                    <span class="bg1 icon1"></span>
+                    매일 쓰는 브라우저 보안이 걱정된다면,<strong> 안전하고 빠른 최신 브라우저 웨일로 업데이트하세요.</strong>
+                    <div class="downloadBtn">
+                        <span class="bg1 icon2"></span>다운로드
+                    </div>
+                    <span class="floatRight">3일 동안 보지 않기
+                        <button type="button" style="cursor: pointer;">&nbsp;</button>
+                    </span>
+                </div>
+            </div>
+            <div id="top">
+                <div class="contentWidth">
+                    <a href="#"><h1 id="logo" class="bg2"></h1></a>
+                    <div class="searchArea">
+                        <input type="text" id="searchText">
+                        <span class="bg2 icon1"></span>
+                        <span class="bg2 icon2"></span>
+                        <button class="submit">
+                            <span class="bg2 zoom"></span>
+                        </button>
+                    </div>
+                    <div class="startBtn floatRight">
+                        네이버를 시작페이지로 <span class="bg2 gt"></span> | 
+                        <a href="https://jr.naver.com/" target="_blank"><span class="bg2 jnaver"></span></a> 
+                        <a href="https://happybean.naver.com/" target="_blank"><span class="bg2 happybin"></span></a>
+                    </div>
+                </div>
+            </div>
+            <!-- gnb 영역 -->
+            <div id="gnbArea">
+                <div class="contentWidth">
+                    <ul class="gnb">
+                        <li><a href="https://mail.naver.com/" class="gtext"><span class="bg2 mail"></span>메일</a></li>
+                        <li><a href="https://section.cafe.naver.com/ca-fe/" class="gtext">카페</a></li>
+                        <li><a href="https://section.blog.naver.com/BlogHome.naver?directoryNo=0&currentPage=1&groupId=0" class="gtext">블로그</a></li>
+                        <li><a href="https://kin.naver.com/" class="gtext">지식iN</a></li>
+                        <li><a href="https://shopping.naver.com/home"><span class="bg2 shopping"></span></a></li>
+                        <li><a href="https://shoppinglive.naver.com/home"><span class="bg2 shoplive"></span></a></li>
+                        <li><a href="https://new-m.pay.naver.com/" class="gtext">Pay</a></li>
+                        <li><a href="https://tv.naver.com/" class="gtext"><span class="bg2 tv"></span>TV</a></li>
+                        <li><a href="https://dict.naver.com/">사전</a></li>
+                        <li><a href="https://news.naver.com/"> 뉴스</a></li>
+                        <li><a href="https://finance.naver.com/">증권</a></li>
+                        <li><a href="https://land.naver.com/">부동산</a></li>
+                        <li><a href="https://map.naver.com/">지도</a></li>
+                        <li><a href="https://vibe.naver.com/">VIBE</a></li>
+                        <li><a href="https://search.shopping.naver.com/book/home">도서</a></li>
+                        <li><a href="https://comic.naver.com/index">웹툰</a></li>
+                        <li class="grayThin"><small><a class="btline">더보기</a></small>
+                        <span class="bg2 down"></span></li>
+                        <li class="gtext" style="cursor: pointer;"><small>접기</small>
+                        <span class="bg2 up"></span></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- hidden gnb 더보기 영역 -->
+            <div id="allMenu">
+                <div class="contentWidth flex">
+                    <div class="box">
+                     <dl>
+                        <dt>ㄱ-ㅁ</dt>
+                        <dd>구독</dd>
+                        <dd>날씨</dd>
+                        <dd>네이버 MY CAR</dd>
+                        <dd>네이버 게임</dd>
+                        <dd>네이버 예약</dd>
+                        <dd>네이버 프리미엄콘텐츠</dd>
+                        <dd>뉴스</dd>
+                        <dd>데이터랩</dd>
+                        <dd>도서</dd>
+                        <dd>메모</dd>
+                     </dl>
+                    </div>
+                    <div class="box">
+                        <dl>
+                            <dt>ㅂ-ㅅ</dt>
+                            <dd>밴드</dd>
+                            <dd>부동산</dd>
+                            <dd>스포츠</dd>
+                            <dd>시리즈</dd>
+                            <dd>시리즈온</dd>
+                        </dl>
+                    </div>
+                    <div class="box">
+                        <dl>
+                            <dt>o</dt>
+                            <dd>엑스퍼트</dd>
+                            <dd>영화</dd>
+                            <dd>오디오클립</dd>
+                            <dd>오피스</dd>
+                            <dd>웨일</dd>
+                            <dd>웹소설</dd>
+                            <dd>웹툰</dd>
+                            <dd>인플루언서 검색</dd>
+                        </dl>
+                    </div>
+                    <div class="box">
+                        <dl>
+                            <dt>ㅈ-ㅊ</dt>
+                            <dd>주소록</dd>
+                            <dd>증권</dd>
+                            <dd>지도</dd>
+                            <dd>지식백과</dd>
+                        </dl>
+                    </div>
+                    <div class="box">
+                        <dl>
+                            <dt>ㅋ-ㅎ</dt>
+                            <dd>캘린더</dd>
+                            <dd>클로바더빙</dd>
+                            <dd>파파고</dd>
+                            <dd>포스트</dd>
+                            <dd>학술정보</dd>
+                            <dd>항공권</dd>
+                            <dd>호텔</dd>
+                        </dl>
+                    </div>
+                    <div class="box">
+                        <dl>
+                            <dt>A-Z</dt>
+                            <dd>keep</dd>
+                            <dd>modoo!</dd>
+                            <dd>MYBOX</dd>
+                            <dd>TV연예</dd>
+                            <dd>V LIVE</dd>
+                            <dd>VIBE</dd>
+                        </dl>
+                    </div>
+                    <div class="box">
+                        <dl>
+                            <dt>사전</dt>
+                            <dd>사전</dd>
+                            <dd>국어사전</dd>
+                            <dd>영어/영영사전</dd>
+                            <dd>일본어사전</dd>
+                            <dd>중국어사전</dd>
+                            <dd>한자사전</dd>
+                            <dd>사전더보기<span class="bg2 more"></span></dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- 본문 영역 -->
+        <div id="wrap">
+            <div class="contentWidth">
+                <section class="colLeft">
+                    <div class="mainBanner">
+                        <div class="slide">
+                            <a href="https://www.challansdeparis.co.kr/index.html" target="_blank"><img src="naverImg/mainBanner.jpg" ></a>
+                        </div>
+                        <div class="slide">
+                            <a href="https://lineagew.plaync.com/kr/update/2023/230208_update?locale=ko" target="_blank"><img src="naverImg/mainBanner2.jpg"></a>
+                        </div>
+                        <div class="slide">
+                            <a href="https://amusemakeup.com/" target="_blank"><img src="naverImg/mainBanner6.jpg"></a>
+                        </div>
+                        <div class="slide">
+                            <a href="https://m.cncmall.kr/" target="_blank"><img src="naverImg/mainBanner5.jpg"></a>
+                        </div>
+                    </div>
+                    <div class="newsLine">
+                        <div class="floatLeft">
+                            <a href="https://news.naver.com/main/list.naver?mode=LPOD&mid=sec&sid1=001&sid2=140&oid=001&isYeonhapFlash=Y">연합뉴스</a><span class="bg2 icon1"></span>
+                        </div>
+                        <div class="floatRight">
+                            <a href="https://www.fifa.com/fifaplus/ko/tournaments/mens/worldcup/qatar2022" target="_blank"><span class="bg4 icon2"></span></a> &middot;
+                            <a href="https://news.naver.com/"><span>뉴스홈</span></a> &middot; <a href="https://entertain.naver.com/home">연예</a> <a href="https://sports.news.naver.com/index">스포츠</a> <a href="https://news.naver.com/main/main.naver?mode=LSD&mid=shm&sid1=101">경제</a>
+                        </div>
+                    </div>
+                    <!-- 뉴스 스탠드영역 -->
+                    <div class="newsStand">
+                        <div class="floatLeft">
+                            <a href="https://newsstand.naver.com/"><span class="bg2 icon1"></span>뉴스스탠드</a>
+                            <span class="bg2 icon2"></span>
+                            <span class="grayThin">구독한 언론사</span> &middot; 전체언론사
+                        </div>
+                        <div class="floatRight">
+                            <span class="bg2 icon1"></span> &nbsp;
+                            <span class="bg2 icon2"></span> &nbsp;
+                            <a href="https://newsstand.naver.com/config.html"><span class="bg2 icon3"></span></a>
+                        </div>
+                    </div>
+                    <!-- 뉴스 박스 영역 -->
+                    <div class="newsBox">
+                        <div class="news"><a href="https://www.pressian.com/" target="_blank"><img src="naverImg/002.png"></a></div>
+                        <div class="news"><a href="https://newsis.com/" target="_blank"><img src="naverImg/003.png"></a></div>
+                        <div class="news"><a href="https://www.kmib.co.kr/news/index.asp" target="_blank"><img src="naverImg/005.png"></a></div>
+                        <div class="news"><a href="http://www.mediatoday.co.kr/" target="_blank"><img src="naverImg/006.png"></a></div>
+                        <div class="news"><a href="https://www.mt.co.kr/" target="_blank"><img src="naverImg/008.png"></a></div>
+                        <div class="news"><a href="https://www.mk.co.kr/" target="_blank"><img src="naverImg/009.png"></a></div>
+                        <div class="news"><a href="https://m.sedaily.com/" target="_blank"><img src="naverImg/011.png"></a></div>
+                        <div class="news"><a href="https://www.fnnews.com/" target="_blank"><img src="naverImg/014.png"></a></div>
+                        <div class="news"><a href="https://www.hankyung.com/" target="_blank"><img src="naverImg/015.png"></a></div>
+                        <div class="news"><a href="https://biz.heraldcorp.com/" target="_blank"><img src="naverImg/016.png"></a></div>
+                        <div class="news"><a href="https://m.edaily.co.kr/" target="_blank"><img src="naverImg/018.png"></a></div>
+                        <div class="news"><a href="https://www.donga.com/" target="_blank"><img src="naverImg/020.png"></a></div>
+                        <div class="news"><a href="https://www.munhwa.com/" target="_blank"><img src="naverImg/021.png"></a></div>
+                        <div class="news"><a href="https://www.segye.com/" target="_blank"><img src="naverImg/022.png"></a></div>
+                        <div class="news"><a href="https://www.hani.co.kr/" target="_blank"><img src="naverImg/028.png"></a></div>
+                        <div class="news"><a href="http://www.dt.co.kr/" target="_blank"><img src="naverImg/029.png"></a></div>
+                        <div class="news"><a href="https://www.etnews.com/" target="_blank"><img src="naverImg/030.png"></a></div>
+                        <div class="news"><a href="https://www.inews24.com/" target="_blank"><img src="naverImg/031.png"></a></div>
+                        <div class="news"><a href="https://www.khan.co.kr/" target="_blank"><img src="naverImg/032.png"></a></div>
+                        <div class="news"><a href="https://www.hankookilbo.com/" target="_blank"><img src="naverImg/038.png"></a></div>
+                        <div class="news"><a href="https://daily.hankooki.com/" target="_blank"><img src="naverImg/042.png"></a></div>
+                        <div class="news"><a href="http://www.koreaherald.com/index.php" target="_blank"><img src="naverImg/044.png"></a></div>
+                        <div class="news"><a href="https://www.ohmynews.com/" target="_blank"><img src="naverImg/047.png"></a></div>
+                        <div class="news"><a href="https://www.ytn.co.kr/" target="_blank"><img src="naverImg/052.png"></a></div>
+                    </div>
+                    <!-- 카테고리 영역 -->
+                    <div class="readBook">
+                        <div class="floatLeft">
+                            오늘 읽을 만한 글 <span class="grayThin"><small>주제별로 분류된 다양한 글 모음</small></span> 
+                        </div>
+                        <div class="floatRight">
+                            <strong>668</strong>개의 글 | 
+                            <span class="bg2 icon1"></span>관심주제설정
+                        </div>
+                    </div>
+                    <div class="categoryArea">
+                        <div class="category">엔터</div>
+                        <div class="category">스포츠</div>
+                        <div class="category">자동차</div>
+                        <div class="category">웹툰</div>
+                        <div class="category">경제</div>
+                        <div class="category">추천&middot;구독</div>
+                        <div class="category">레시피</div>
+                        <div class="category">리빙</div>
+                    </div>
+                    <div class="livingArea">
+                        <ul>
+                            <li>
+                                <div class="img">
+                                    <img src="naverImg/living1.jpg">
+                                </div>
+                                <div class="text">
+                                    <p class="category">리빙</p>
+                                    <p class="title"><a class="borderBt">가을에 어울리는 우리 집 주방</a></p>
+                                    <p class="desc">오랜만에 찾아온 달콤당입니다 ^^ 달콤당은 사계절중에
+                                        가을이 가장 잘 어울리는 계절이 아닐까 싶어요.주방이 북향이라 해가
+                                        쨍하게 들기보단 은은하게 들어오는 편이고 테라스...</p>
+                                    <p class="author">달콤새콤 &middot; 1주일 전</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="img">
+                                    <img src="naverImg/living02.jpg">
+                                </div>
+                                <div class="text">
+                                    <p class="category">리빙</p>
+                                    <p class="title"><a class="borderBt">구축 빌라를 신혼집으로, 미니멀 화이트 인테리어</a></p>
+                                    <p class="desc">작년 10월 1일, 결혼을 하고 벌써 찐쀼의 생활이 딱 4개월차가 됐다. 새해엔 우리집 인테리어 기록을 해야지 하면서도 이것저것 하다보니 새해를 맞이하고도 벌써 한달이나 지난...</p>
+                                    <p class="author">누이록nooylog &middot; 1주일 전</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="img">
+                                    <img src="naverImg/living03.png">
+                                </div>
+                                <div class="text">
+                                    <p class="category">리빙</p>
+                                    <p class="title"><a class="borderBt">둘이 사는집, 1년간 변화</a></p>
+                                    <p class="desc">둘이 사는 집 / 24평 아파트 인테리어 대체로 화이트, 옐로우 한 스푼 ♡ 작년 11월쯤 인스타그램 계정을 만들어 집 사진을 하나 둘 기록하기 시작했고 감사하게도 12월 초, 오늘...</p>
+                                    <p class="author">후이홈 &middot; 5일 전</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="img">
+                                    <img src="naverImg/living04.jpg">
+                                </div>
+                                <div class="text">
+                                    <p class="category">리빙</p>
+                                    <p class="title"><a class="borderBt">더러워진 패딩 세탁 및 털 뭉침 방지 건조 방법</a></p>
+                                    <p class="desc">감사나무입니다~ 딸의 흰색 구스 롱패딩이 얼마 안입었는데 많이 더러워졌더라구요. 흰색 롱패딩을 입고 싶다고 해서 사주고 금방 더러워질것을 예상을 했었는데 역시였네요. 그...</p>
+                                    <p class="author">감사나무 &middot; 6일 전</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="img">
+                                    <img src="naverImg/living05.jpg">
+                                </div>
+                                <div class="text">
+                                    <p class="category">리빙</p>
+                                    <p class="title"><a class="borderBt">오래된 화장실 건식으로 리모델링한 후기</a></p>
+                                    <p class="desc">건식 화장실 리모델링 후기 욕실 인테리어 안녕하세요. '리빙습관' 최줄리입니다. 곧 이사를 앞두고 정든 신혼집을 떠나면서 전체 리모델링 했던 예뻤던 집을 기록해 봅니다.30평...</p>
+                                    <p class="author">최즐리 &middot; 2주일 전</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="img">
+                                    <img src="naverImg/living06.jpg">
+                                </div>
+                                <div class="text">
+                                    <p class="category">리빙</p>
+                                    <p class="title"><a class="borderBt">신혼집 인테리어 #랜선집들이</a></p>
+                                    <p class="desc">#랜선집들이 #신혼집인테리어 #오늘의 집 #신혼집 #25평 #구축 #아파트 #3베이 #리모델링 #부분인테리어 #신혼부부 신혼부부 랜선집들이 25평 구축아파트 인테리어 후기 21...</p>
+                                    <p class="author">리미콩 &middot; 1주일 전</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="img">
+                                    <img src="naverImg/living07.jpg">
+                                </div>
+                                <div class="text">
+                                    <p class="category">리빙</p>
+                                    <p class="title"><a class="borderBt">다양한 감성 아이템으로 복층 오피스텔 꾸미기</a></p>
+                                    <p class="desc">자취 1년 n개월 차, 꾸민건 없지만 공유하는 저렴이 자취 인테리어템들 하루 방문자 100명도 안되는 블로그에 협찬이란 없습니다...모두들 #내돈내산 대부분 #오늘의집 #네이버...</p>
+                                    <p class="author">휑 &middot; 2주일 전</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="img">
+                                    <img src="naverImg/living08.jpg">
+                                </div>
+                                <div class="text">
+                                    <p class="category">리빙</p>
+                                    <p class="title"><a class="borderBt">옷에 묻은 볼펜 자국 쉽고 빠르게 지우는 법</a></p>
+                                    <p class="desc">아이 옷은 늘 얼룩덜룩 아이 옷 소매를 보면 늘 크레파스나 볼펜 물감등이 묻어있어요.크레파스나 물감은 세탁으로 쉽게 지워지지만 볼펜은 세탁을 해도 지워지지가 않죠.집에...</p>
+                                    <p class="author">유니 &middot; 1주일 전</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="img">
+                                    <img src="naverImg/living09.jpg">
+                                </div>
+                                <div class="text">
+                                    <p class="category">리빙</p>
+                                    <p class="title"><a class="borderBt">좁은 주방 인테리어 꿀팁</a></p>
+                                    <p class="desc">안녕하세요. 집꾸미는 아루굴라쏭 입니다:-) 오늘은 그동안 많이 보여드리지 못했던 저희집 부엌을 공개할거예요! 냉장고장만 고치고 시공없이 꾸민, 아마도 많은 분들이 저랑 비슷...</p>
+                                    <p class="author">아루굴라쏭 &middot; 1주일 전</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <!-- 핫클릭 영역 -->
+                        <div class="happyclick">
+                            <strong>오늘 가장 따뜻한 클릭</strong><span class="bg2 icon1"></span>
+                            <div class="listBox">
+                                <div class="list">
+                                    <div class="img">
+                                        <img src="naverImg/living2.jpg">
+                                    </div>
+                                    <div class="text">
+                                        <p class="title"><a class="borderBt">주민들이 분리수거한 페트병으로 만든가방</a></p>
+                                        <p class="number">LAR &middot; <span>198%</span>달성</p>
+                                    </div>
+                                </div>
+                                <div class="list">
+                                    <div class="img">
+                                        <img src="naverImg/living3.jpg">
+                                    </div>
+                                    <div class="text">
+                                        <p class="title"><a class="borderBt">이주 여성이 지역 특산물로 만든 천연 비누</a></p>
+                                        <p class="number">이플아토 &middot; <span>105%</span>달성</p>
+                                    </div>
+                                </div>
+                                <div class="list">
+                                    <div class="img">
+                                        <img src="naverImg/living4.jpg">
+                                    </div>
+                                    <div class="text">
+                                        <p class="title"><a class="borderBt">발달 장애인의 자립을 돕는 특별한 초콜릿</a></p>
+                                        <p class="number">동안제일복지센터 &middot; <span>520%</span>달성</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- 본문오른쪽 영역 -->
+                <aside class="colRight">
+                    <div class="container">
+                        <!-- 로그인 영역 -->
+                        <div class="loginArea">
+                            <p class="login_msg">네이버를 더 안전하고 편리하게 이용하세요</p>
+                            <a href="#" class="login_box"><span class="bg4 icon1"></span>로그인</a>
+                            <span class="bg4 icon2"></span>
+                            <a href="#" class="btline">아이디</a>&middot;<a href="#" class="btline">비밀번호찾기</a>
+                            <span class="bg4 icon3"></span><a href="#" class="btline">회원가입</a>
+                        </div>
+                        <!-- 환율,증시,이슈 영역 -->
+                        <div class="stock">
+                            <a><b>환율</b> | <span class="bg5 icon1"></span> USD <b>1,251.50</b><span class="bg5 icon2"></span><span style="color:red;">0.50 +0.04%</span></a>
+                            <a class="btn1"><span class="bg5 icon3"></span></a>
+                            <a class="btn2"><span class="bg5 icon4"></span></a> 
+                        </div>
+                        <!-- 사이드배너 영역 -->
+                        <div class="sideBanner">
+                            <img src="naverImg/sideBanner1.jpg">
+                        </div>
+                        <!-- shopping 영역 -->
+                        <div class="shoppingArea">
+                            <div class="titleBox">
+                                <div class="floatLeft">
+                                    <span class="bg3 icon1"></span>트랜드쇼핑
+                                    <span class="bg3 icon2"></span>
+                                </div>
+                                <div class="floatRight">
+                                    <span class="menu1 gtextOn">상품</span> &nbsp; <span class="menu2">쇼핑몰</span> &nbsp; <span class="menu3">MEN</span>
+                                </div>
+                            </div>
+                            <div class="shopping">
+                                <div class="shopping_list">
+                                    <a><b>쿠팡</b></a> &nbsp;&nbsp;&middot;&nbsp;&nbsp; <a>G마켓</a> &nbsp;&nbsp;&middot;&nbsp;&nbsp;옥션 &nbsp;&middot;&nbsp; <a>11번가</a> &nbsp;&middot;&nbsp;&nbsp;<a>SSG닷컴</a> &nbsp;&nbsp;&middot;&nbsp;&nbsp; <a><b>티몬</b></a> <br><a><b>올리브영</b></a> &nbsp;&middot;&nbsp; <a>위메프</a> &nbsp;&middot;&nbsp; <a><b>GS샵</b></a> &nbsp;&middot;&nbsp; <a>CJ온스타일</a> &nbsp;&middot;&nbsp; <a>패션플러스</a>
+                                </div>
+                                <div class="btn">
+                                    <span class="text1">2/18</span>
+                                    <a class="btn1"><span class="bg5 icon1"></span></a>
+                                    <a class="btn2"><span class="bg5 icon2"></span></a> 
+                                </div>
+                                <div class="shopping_box">
+                                    <div class="img_list">
+                                        <div class="img_box">
+                                            <img src="naverImg/shopping1.jpg" alt="shopping_Img1">
+                                        </div>
+                                        <div class="text"><b>예쁜~상+하SET룩!</b>최대80%세일까지?</div>
+                                    </div>
+                                    <div class="img_list">
+                                        <div class="img_box">
+                                            <img src="naverImg/shopping2.jpg" alt="shopping_Img1">
+                                        </div>
+                                        <div class="text"><b>와~청소기쿰쿰내</b><br> 싹사라져!최대41%</div>
+                                    </div>
+                                    <div class="img_list">
+                                        <div class="img_box">
+                                            <img src="naverImg/shopping3.jpg" alt="shopping_Img1">
+                                        </div>
+                                        <div class="text"><b>시즌오프Max80%↓</b>봄환절기정장SALE</div>
+                                    </div>
+                                </div>
+                                <div class="shopping_box">
+                                    <div class="img_list">
+                                        <div class="img_box">
+                                            <img src="naverImg/shopping4.jpg" alt="shopping_Img1">
+                                        </div>
+                                        <div class="text"><b>전상품 무료배송!</b><br>요즘핫한 코디룩</div>
+                                    </div>
+                                    <div class="img_list">
+                                        <div class="img_box">
+                                            <img src="naverImg/shopping5.jpg" alt="shopping_Img1">
+                                        </div>
+                                        <div class="text"><b>식단조절은하면서</b> 물조절은왜안해</div>
+                                    </div>
+                                    <div class="img_list">
+                                        <div class="img_box">
+                                            <img src="naverImg/shopping6.jpg" alt="shopping_Img1">
+                                        </div>
+                                        <div class="text"><b>SALE+무료배송</b><br>지금입어야 예뻐</div>
+                                    </div>
+                                </div>
+                                <div class="shopping_box">
+                                    <div class="img_list">
+                                        <div class="img_box">
+                                            <img src="naverImg/shopping7.jpg" alt="shopping_Img1">
+                                        </div>
+                                        <div class="text"><b>수납용품 끝판왕</b><br>최대89% 파격가</div>
+                                    </div>
+                                    <div class="img_list">
+                                        <div class="img_box">
+                                            <img src="naverImg/shopping8.jpg" alt="shopping_Img1">
+                                        </div>
+                                        <div class="text"><b>LG코드제로청소</b><br>쿠폰가70만원대래</div>
+                                    </div>
+                                    <div class="img_list">
+                                        <div class="img_box">
+                                            <img src="naverImg/shopping9.jpg" alt="shopping_Img1">
+                                        </div>
+                                        <div class="text"><b>생물무침1+1</b><br>쌈배추+무료배송</div>
+                                    </div>
+                                </div>
+                                <div class="shopping_box">
+                                    <div class="img_list">
+                                        <div class="img_box">
+                                            <img src="naverImg/shopping10.jpg" alt="shopping_Img1">
+                                        </div>
+                                        <div class="text"><b>미리만나는봄신상</b><br>최대~50%</div>
+                                    </div>
+                                    <div class="img_list">
+                                        <div class="img_box">
+                                            <img src="naverImg/shopping11.jpg" alt="shopping_Img1">
+                                        </div>
+                                        <div class="text"><b>직장인들 아침~</b><br>냉장고에 쟁여놔!</div>
+                                    </div>
+                                    <div class="img_list">
+                                        <div class="img_box">
+                                            <img src="naverImg/shopping12.jpg" alt="shopping_Img1">
+                                        </div>
+                                        <div class="text"><b>명품퀄리티 반지</b><br>신상 50% 2만원대</div>
+                                    </div>
+                                </div><br>
+
+                                <div class="shopping_news">
+                                    <div class="btn">
+                                        <span class="text2">반갑다! 쇼핑뉴스</span>
+                                        <a class="btn1"><span class="bg5 icon1"></span></a>
+                                        <a class="btn2"><span class="bg5 icon2"></span></a> 
+                                    </div>
+                                    <ul>
+                                        <li><span class="gBg"></span><b>시크헤라</b> SEASON OFF 최대80%세일</li>
+                                        <li><span class="gBg"></span><b>조아맘</b> 봄 신상 가득~ 매일 10% SALE</li>
+                                        <li><span class="gBg"></span><b>엘르이너웨어</b>봄 속옷 준비 최대60%SALE</li>
+                                        <li><span class="gBg"></span><b>딘트</b>사랑받는 이유! 봄을 담은 신상5%</li>
+                                        <li><span class="gBg"></span><b>시크폭스</b>매일신상 10% ↓ 예쁜봄옷 준비해</li>
+                                        <li><span class="gBg"></span><b>luvreparis</b>주얼리 세트특가 무료배송까지~</li>
+                                        <li><span class="gBg"></span><b>바닐라슈</b>BEST 인기상승! 초특가! 펌프스</li>
+                                    </ul><br>
+                                </div>
+
+                                <div class="shopping_fashion">
+                                    <div class="btn">
+                                        <span class="text3"><a>패션</a><a>라이프</a><a>뷰티</a><a>디지털&middot;레저</a></span>
+                                        <span class="text4">1/10</span>
+                                        <a class="btn1"><span class="bg5 icon1"></span></a>
+                                        <a class="btn2"><span class="bg5 icon2"></span></a> 
+                                    </div>
+                                    <div class="fashion_box">
+                                        <div class="fashion_img">
+                                            <img src="naverImg/fashion1.png">
+                                            <div class="fasion_text">끈적임 백탁 ZERO 21% ↓</div>
+                                        </div>
+                                        <div class="fashion_img">
+                                            <img src="naverImg/fashion2.jpg">
+                                            <div class="fasion_text">요즘 핫한 컬러만 1+1찬스</div>
+                                        </div>
+                                    </div>
+                                </div><br><br>
+
+                                <div class="shopping_event">
+                                    <div class="btn">
+                                        <span class="bg3 icon5"></span>
+                                        <span class="text5">원쁠딜 전 상품 무료배송!</span>
+                                        <a class="btn1"><span class="bg5 icon1"></span></a>
+                                        <a class="btn2"><span class="bg5 icon2"></span></a>
+                                    </div>
+                                    <div class="event_box">
+                                        <div class="event_imgArea">
+                                            <span class="bg3 icon7"></span>
+                                            <div class="eventImg1">
+                                                <img src="naverImg/event1.jpg">
+                                            </div>
+                                            <div class="bg3 icon6"></div>
+                                            <div class="eventImg2">
+                                                <img src="naverImg/event2.jpg">
+                                            </div>
+                                        </div>
+                                         <div class="event_text">
+                                            <a>하겐다즈 미니컵 5개+5개<br>골라담기</a><br><b><a><span style="color:red;">50%</span> 27,500원</a></b>
+                                        </div>
+                                    </div>
+                                    <div class="event_box">
+                                        <div class="event_imgArea">
+                                            <span class="bg3 icon7"></span>
+                                            <div class="eventImg3">
+                                                <img src="naverImg/event3.jpg">
+                                            </div>
+                                            <div class="bg3 icon6"></div>
+                                            <div class="eventImg4">
+                                                <img src="naverImg/event4.jpg">
+                                            </div>
+                                        </div>
+                                         <div class="event_text"><a>마더케이 신생아 유아 안<br>전 면봉 100P 2종+2종</a><br><b><a><span style="color:red;">40%</span> 11,900원</a></b></div>
+                                    </div>
+                                    <div class="event_box">
+                                        <div class="event_imgArea">
+                                            <span class="bg3 icon7"></span>
+                                            <div class="eventImg5">
+                                                <img src="naverImg/event5.jpg">
+                                            </div>
+                                            <div class="bg3 icon6"></div>
+                                            <div class="eventImg6">
+                                                <img src="naverImg/event6.jpg">
+                                            </div>
+                                        </div>
+                                        <div class="event_text"><a>국산 KF94 바른 새부리형<br>마스크 대형 50매+50매</a><br><b><a><span style="color:red;">40%</span> 11,900원</a></b></div> 
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+        <footer>
+            <div class="contentWidth footer1">
+                <article class="box">
+                    <div class="imgBox">
+                        <div class="img"><img src="naverImg/footer01.jpg"></div>
+                    </div>
+                    <div class="textBox">
+                        <p class="gtext"><strong>네이버 해피빈 더블기부</strong></p>
+                        <p><strong><a class="boderBt">프로배구 연고지</a></strong></p>
+                        <p>이웃에게X2배로<br>전달하는 희망</p> 
+                    </div>
+                </article>
+                <article class="box">
+                    <div class="imgBox">
+                        <div class="img"><img src="naverImg/footer02.jpg"></div>
+                    </div>
+                    <div class="textBox">
+                        <p class="gtext"><strong>열린연단 석학에세이</strong></p>
+                        <p><strong><a class="boderBt">니체의 인도</a></strong></p>
+                        <p>태평양 시대 이후의 공상<br>한국 인도 가까운 이웃될까</p> 
+                    </div>
+                </article>
+                <article class="box">
+                    <div class="imgBox">
+                        <div class="img"><img src="naverImg/footer03.jpg"></div>
+                    </div>
+                    <div class="textBox">
+                        <p class="gtext"><strong>나답게 살기 캠페인</strong></p>
+                        <p><strong><a class="borderBt">나, 잘 살고 있는걸까?</a></strong></p>
+                        <p>징정한 나를 찾는 여정<br>무료 테스트하기</p> 
+                    </div>
+                </article>
+            </div>
+            <div class="contentWidth footer2 grayline">
+                <div class="left"><strong>공지사항</strong></div>
+                <div class="right"><strong>서비스 전체보기</strong>
+                <span class="bg2 rightArrow"></span>
+                </div>
+            </div>
+            <div class="contentWidth footer3 grayline">
+                <div class="textBox">
+                    <table>
+                        <tr>
+                            <th>Creators</th>
+                            <td>크리에이터 | 스몰비즈니스</td>
+                        </tr>
+                        <tr>
+                            <th>Partners</th>
+                            <td>SME 풀케어 시스템 | 비즈니스 &middot; 광고 | 스토어개설 | 지역업체 등록 | 엑스퍼트 등록</td>
+                        </tr>
+                        <tr>
+                            <th>Developers</th>
+                            <td>네이버 개발자 센터 | 오픈 API | 오픈소스 | 네이버 D2 | 네이버D2SF | 네이버 랩스</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="bannerBox">
+                    <div class="banner">
+                        <span><strong>웨일 브라우저</strong><br>다운받기</span>
+                        <img src="naverImg/banner1.png">
+                    </div>
+                    <div class="banner">
+                        <span><strong>프로젝트 꽃</strong><br>바로가기</span>
+                        <img src="naverImg/banner2.png">
+                    </div>
+                </div>
+            </div>
+            <div class="contentWidth footer4 grayline">
+                <ul>
+                    <li>회사소개</li>
+                    <li></li>
+                    <li>인재채용</li>
+                    <li></li>
+                    <li>제휴제안</li>
+                    <li></li>
+                    <li>이용약관</li>
+                    <li></li>
+                    <li><storong>개인정보처리방침</storong></li>
+                    <li></li>
+                    <li>청소년보호정책</li>
+                    <li></li>
+                    <li>네이버 정책</li>
+                    <li></li>
+                    <li>고객센터</li>
+                    <li>&copy; NAVER Corp.</li>
+                </ul>
+            </div>
+        </footer>
+        <div id="toTop">
+            <span class="bg2 dark"></span>
+            <a href="#top"><span class="bg2 top"></span></a>
+        </div>
+        <div id="darkBg"></div>
+        <!-- 로그인 팝업 영역 -->
+        <div id="login_pop">
+            <button type="button" class="floatRight" style="cursor:pointer;"></button>
+            <h2 id="btLogo" class="bg2"></h2>
+            <div class="loginBox_pop">
+                <div class="idTab">
+                    <span class="bg6 icon1"></span> ID 로그인
+                </div>
+                <div class="numTab tabBg">
+                    <span class="bg6 icon2"></span> 일회용 비밀번호
+                </div>
+                <div class="qrTab tabBg">
+                    <span class="bg6 icon3"></span> QR코드
+                </div>
+                <div class="id_pop">
+                    <div class="idArea">
+                        <div class="idBox">
+                            <div class="id_gLine"></div>
+                            <span class="bg6 icon1"></span>
+                            <span class="bg6 icon2"></span>
+                            <input type="text" class="id" placeholder="아이디">
+                        </div>
+                        <div class="passwordBox">
+                            <div class="pw_gLine"></div>
+                            <span class="bg6 icon3"></span>
+                            <span class="bg6 icon4"></span>
+                            <input type="password" class="pw" placeholder="비밀번호">
+                        </div>
+                    </div>
+                    <span class="bg6 icon5"></span> 로그인 상태 유지<br>
+                    <button type="button">로그인</button>
+                </div>
+                <div class="num_pop">
+                    <div class="numArea">
+                        <div class="textBox">네이버앱의 <span class="gtext">메뉴>설정 <span class="bg6 icon1"></span> 로그인 아이디 관리<br>>일회용 로그인 번호 받기</span>에 보이는 번호를 입력해 주세요.
+                        </div>
+                        <div class="numBox">
+                            <input type="text" class="num" placeholder="번호를 입력하세요">
+                        </div>
+                        <button type="button">로그인</button>
+                    </div>
+                </div>
+                <div class="qr_pop">
+                    <div class="qrArea">
+                        <div class="qrBox">
+                            <img src="naverImg/qr_img.jpg" alt="qrcode">
+                        </div>
+                        <p>남은시간<br><span style="color:#19ce60; font-size:20px">1분 58초</span></p>
+                    </div>
+                    <div class="qrText">
+                        <p class="textTop">공용 네트워크, 공용 PC라면 안전을 위해<br>QR코드로 로그인해주세요.</p>
+                        <p class="textBt">네이버 앱 <span class="bg6 icon1"></span> 렌즈 <span class="bg6 icon2"></span> 를 눌러 QR코드를 스캔하여<br>보이는 숫자 중 87를 선택하면 로그인 됩니다. <span class="bg6 icon3"></span></p>
+                    </div>
+                </div>
+            </div>
+            <p>비밀번호 찾기 | 아이디 찾기 | 회원가입</p>
+        </div>
+    </body>
+</html>
